@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+}
+.header__logo{
+  width: 242px;
+  height: 101px;
+  filter: url(../img/logoN.svg) invert(0.8) saturate(100%) ;
+}
