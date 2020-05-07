@@ -3,17 +3,17 @@
   margin:0;
 }
 #main {
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/hero.png);
   height: 500px;
   z-index: 0;
 }
-.nav {
+/* .nav {
   width: 98%;
   float: left;
   height: 55px;
   padding: 0 1% 0 1%;
   background-color: #142D4C;
-}
+} */
 ul {
   list-style-type: none;
   margin: 0;
