@@ -6,7 +6,7 @@
 .apartado1{
     background-color: #1f4287;
     height: 180px;}
-}
+
 
 .imag{
     margin-left: 100px;
@@ -15,10 +15,25 @@
 }
 .posicion_logo{
     float: left;
-    margin-left: 100px; padding-top: 10px;
+    padding-top: 10px;
 }
+
+
 
 .elegir_registro{
     background-color: #d6d6d6;
-    height: 520px;
+    height: 200px;
+}
+
+
+.posicion_veterinario{
+    float: left;
+    margin-left: 300px; 
+    padding-top: 100px;
+}
+
+.posicion_dueño{
+    float: right;
+    margin-right: 300px; 
+    padding-top: 100px;
 }
