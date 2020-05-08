@@ -4,8 +4,10 @@
   font-family: "Times New Roman", Times, serif;
 }
 body {
-  background: url(../img/fondo-registro-cliente.png) no-repeat center top;
+  background: url(../img/fondo-registro-cliente.png);
   overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background-size: 1446px 1366px; */
 }
 .header {
@@ -30,11 +32,11 @@ body {
   left: 358px;
 }
 .content__icon {
-  height: 138px;
-  width: 138px;
+  height: 123px;
+  width: 123px;
   position: relative;
-  left: 244px;
-  top: -90px;
+  left: 266px;
+  top: -70px;
 }
 .content__title {
   position: relative;
@@ -42,7 +44,7 @@ body {
   font-size: 61px;
   font-weight: bold;
   color: #278ea5;
-  top: -70px;
+  top: -50px;
 }
 .content__input--CP{
   position: relative;
@@ -180,4 +182,12 @@ body {
   left: 540px;
   margin: 20px 0 75px 0;
   font-size: 20px;
+}
+.content__register-client strong{
+  color: #FFFFFF;
+  
+}
+.content__register-client a{
+  color: #FFFFFF;
+  
 }
