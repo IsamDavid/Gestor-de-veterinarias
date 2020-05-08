@@ -3,10 +3,22 @@
     margin:0;
   }
 
-.logo{
+.apartado1{
     background-color: #1f4287;
-    border-color: black;
+    height: 180px;}
+}
+
+.imag{
+    margin-left: 100px;
+    border-color: blanchedalmond;
     border-style: solid;
-    border: 1px;
-    height: 200px;
+}
+.posicion_logo{
+    float: left;
+    margin-left: 100px; padding-top: 10px;
+}
+
+.elegir_registro{
+    background-color: #d6d6d6;
+    height: 520px;
 }
