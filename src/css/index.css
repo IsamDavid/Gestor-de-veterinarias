@@ -156,3 +156,32 @@ li a {
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
 }
+
+.ic_imag{
+  margin-right: 50px;
+  background-color: #1f4287;
+}
+
+.iconos{
+  float: right;
+  padding-top: -150px;
+  background-color:  #1f4287;
+}
+
+.footer{
+  background-color:  #1f4287;
+}
+
+.TyC{
+  color: #fcfcfc;
+  margin-right: 1050px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.Copy{
+  color: #fcfcfc;
+  margin-right: 1050px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
