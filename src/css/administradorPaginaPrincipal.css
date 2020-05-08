@@ -21,7 +21,7 @@ background-color: #D6D6D6;}
 }
 ul {
     list-style-type: none;
-    margin-right: 350px;
+    margin-right: 550px;
     padding: 0;
     overflow: hidden;
   }
@@ -76,21 +76,22 @@ ul {
     #tabla{
         
         width: 1100px;
-        margin-right:auto;
+        margin-right: 450px;
         margin-left: auto;
         margin-top: 50px;
     }
+    
     #main{
         width: 1800px;
         margin-right: auto;
         margin-left: auto;}
-#blog{
-    margin-right: 400px;
-}
-.content__button{
-    border-radius: 5px;
-    border: 1px solid #278EA5;
-    background-color: #278EA5;
-    position: relative;
-    
-    color: #FFFFFF;}
+     #blog{
+            margin-right: 400px;
+        }
+        .content__button{
+            border-radius: 5px;
+            border: 1px solid #278EA5;
+            background-color: #278EA5;
+            position: relative;
+            
+            color: #FFFFFF;}
