@@ -2,69 +2,68 @@
 <html>
 
 <head>
-  <link type="text/css" rel="stylesheet" href="../css/registroVeterinario.css">
+  <link type="text/css" rel="stylesheet" href="../src/css/registroVeterinario.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Registro Veterinario</title>
 </head>
 <body>
   <div class="header">
-    <img class="header__logo" src="../src/img/logoN.svg" alt="Logo patitasPet's">
+    <a href="index.html">
+      <img class="header__logo" src="../src/img/logoN.svg" alt="Logo patitasPet's">
+    </a>
   </div>
   
   <div class="content">
     <img class="content__icon" src="../src/img/registroVeterianrio .svg" alt="Icono de veterinario">
     <h1 class="content__title">Registro</h1>
     <form action="">
-      <div class="content__input--CP">
+    
         <!-- Cedula Profesional -->
-        <input type="text" placeholder="Cedula Profesional">
-      </div>
+        <input class="content__input--CP" type="text" placeholder="Cedula Profesional">
       <br>
-      <div class="content__input--name">
         <!-- Nombre -->
-        <input type="text" placeholder="Nombre">
-      </div>
+        <input class="content__input--name" type="text" placeholder="Nombre">
       <br>
-      <div class="content__input--lastName1">
+      
         <!-- Apellido Paterno-->
-        <input type="text" placeholder="Apellido Paterno">
-      </div>
+        <input class="content__input--lastName1" type="text" placeholder="Apellido Paterno">
       <br>
-      <div class="content__input--lastName2">
         <!-- Apellido Materno -->
-        <input type="text" placeholder="Apellido Materno">
-      </div>
+        <input class="content__input--lastName2" type="text" placeholder="Apellido Materno">
       <br>
-      <div class="content__input--phone">
         <!--Telefono-->
-        <input type="text" placeholder="Telefono">
-      </div>
+        <input class="content__input--phone" type="text" placeholder="Telefono">
       <br>
-      <div class="content__input--address">
         <!-- Dirección -->
-        <input type="text" placeholder="Dirección">
-      </div>
+        <input class="content__input--address" type="text" placeholder="Dirección">
       <br>
-      <div class="content__input--user">
         <!-- Correo-->
-        <input type="text" placeholder="Correo">
-      </div>
+        <input class="content__input--email" type="text" placeholder="Correo">      
       <br>
-      <div class="content__input--user">
         <!-- Contraseña-->
-        <input type="text" placeholder="Contraseña">
+        <input class="content__input--password" type="text" placeholder="Contraseña">
+      <br>
+      <!-- Sexo -->
+      <div class="container__gender">
+        <label for="Sexo">Sexo</label>
+        <div class="container__gender--radio">
+          <div>
+            <input type="radio" name="masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="femenino" value="femenino">
+            <label for="femenino">Femenino</label>
+          </div>
+        </div>
       </div>
       <br>
-
-      <!-- Sexo -->
       
       <!-- Botón Registrarse -->
-      <input class="content__button" type="submit" value="Enviar">
-  
-      <!-- <button type="submit" value="Entrar">Entrar</button> -->
-      <p class="content__register">¿Aun no estas registrado? Registrate<a href="#">Aquí</a></p>
+      <input class="content__button" type="submit" value="Registrarse">
+
+      <p class="content__login">¿Ya estas registrado? <a href="iniciarSesion.html">Inicia Sesión</a></p>
     </form>
   </div>
+  <p class="content__register-client">¿Eres cliente? Haz clic <a href="registroCliente.html">aquí</a></p>
 
 </body>
 </html>
