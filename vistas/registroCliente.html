@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="../src/css/registroCliente.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Registro Veterinario</title>
+</head>
+
+<body>
+  <div class="header">
+    <img class="header__logo" src="../src/img/logoN.svg" alt="Logo patitasPet's">
+  </div>
+
+  <div class="content">
+    <img class="content__icon" src="../src/img/RegistroCliente.svg" alt="Icono de veterinario">
+    <h1 class="content__title">Registro</h1>
+    <form action="">
+
+      <!-- Cedula Profesional -->
+      <input class="content__input--CP" type="text" placeholder="CURP">
+      <br>
+      <!-- Nombre -->
+      <input class="content__input--name" type="text" placeholder="Nombre">
+      <br>
+
+      <!-- Apellido Paterno-->
+      <input class="content__input--lastName1" type="text" placeholder="Apellido Paterno">
+      <br>
+      <!-- Apellido Materno -->
+      <input class="content__input--lastName2" type="text" placeholder="Apellido Materno">
+      <br>
+      <!--Telefono-->
+      <input class="content__input--phone" type="text" placeholder="Telefono">
+      <br>
+      <!-- Dirección -->
+      <input class="content__input--address" type="text" placeholder="Dirección">
+      <br>
+      <!-- Correo-->
+      <input class="content__input--email" type="text" placeholder="Correo">
+      <br>
+      <!-- Contraseña-->
+      <input class="content__input--password" type="text" placeholder="Contraseña">
+      <br>
+      <!-- Sexo -->
+      <div class="container__gender">
+        <label for="Sexo">Sexo</label>
+        <div class="container__gender--radio">
+          <div>
+            <input type="radio" name="masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="femenino" value="femenino">
+            <label for="femenino">Femenino</label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <!-- Botón Registrarse -->
+      <input class="content__button" type="submit" value="Registrarse">
+      <p class="content__login">¿Ya estas registrado? <a href="#">Inicia Sesión</a></p>
+    </form>
+  </div>
+  <p class="content__register-client">¿No eres veterinario? Haz clic <a href="#">aquí</a></p>
+
+</body>
+
+</html>
