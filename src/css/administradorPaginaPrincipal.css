@@ -80,7 +80,6 @@ ul {
         margin-left: auto;
         margin-top: 50px;
     }
-    
     #main{
         width: 1800px;
         margin-right: auto;
@@ -88,3 +87,10 @@ ul {
 #blog{
     margin-right: 400px;
 }
+.content__button{
+    border-radius: 5px;
+    border: 1px solid #278EA5;
+    background-color: #278EA5;
+    position: relative;
+    
+    color: #FFFFFF;}
