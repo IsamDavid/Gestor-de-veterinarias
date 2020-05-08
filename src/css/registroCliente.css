@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background: url(../img/fondo-registro-cliente.png);
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 1446px 1366px; */
+}
+.header {
+  height: 133px;
+  width: 100%;
+  margin-bottom: 39px;
+}
+.header__logo {
+  width: 245px;
+  height: 108px;
+  position: relative;
+  left: 125px;
+  top: 25px;
+}
+.content {
+  width: 650px;
+  height: 1147px;
+  border: 1px solid #707070;
+  background-color: #ffffff;
+  border-radius: 70px;
+  position: relative;
+  left: 358px;
+}
+.content__icon {
+  height: 123px;
+  width: 123px;
+  position: relative;
+  left: 266px;
+  top: -70px;
+}
+.content__title {
+  position: relative;
+  left: 216px;
+  font-size: 61px;
+  font-weight: bold;
+  color: #278ea5;
+  top: -50px;
+}
+.content__input--CP{
+  position: relative;
+  left: 62px;
+  width: 507px;
+  height: 54px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-size: 29px;
+}
+.content__input--name{
+  position: relative;
+  left: 62px;
+  width: 507px;
+  height: 54px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-size: 29px;
+}
+.content__input--lastName1{
+  position: relative;
+  left: 62px;
+  width: 507px;
+  height: 54px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-size: 29px;
+}
+.content__input--lastName2{
+  position: relative;
+  left: 62px;
+  width: 507px;
+  height: 54px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-size: 29px;
+}
+.content__input--phone{
+  position: relative;
+  left: 62px;
+  width: 507px;
+  height: 54px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-size: 29px;
+}
+.content__input--address{
+  position: relative;
+  left: 62px;
+  width: 507px;
+  height: 54px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-size: 29px;
+}
+.content__input--email{
+  position: relative;
+  left: 62px;
+  width: 507px;
+  height: 54px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-size: 29px;
+}
+
+.content__input--password{
+  position: relative;
+  left: 62px;
+  width: 507px;
+  height: 54px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-size: 29px;
+}
+
+.container__gender{
+  position: relative;
+  left: 95px;
+  font-size: 29px;
+  color:#707070;
+}
+.container__gender--radio{
+  position: relative;
+  left: -10px;
+  display: inline;
+  font-size: 25px;
+}
+.container__gender--radio input{
+  width: 20px;
+  height: 20px;
+  margin: 0px 14px 0px 0px;
+}
+.container__gender--radio label{
+  margin: 0px 8px 0px 0px;
+}
+
+
+.content__button{
+  width: 527px;
+  height: 71px;
+  border-radius: 15px;
+  border: 1px solid #1f4287;
+  background-color: #1F4287;
+  position: relative;
+  left: 62px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.content__login{
+  position: relative;
+  left: 189px;
+  font-size: 20px;
+}
+
+.content__register-client{
+  position: relative;
+  left: 540px;
+  margin: 20px 0 75px 0;
+  font-size: 20px;
+}
+.content__register-client strong{
+  color: #FFFFFF;
+  
+}
+.content__register-client a{
+  color: #FFFFFF;
+  
+}

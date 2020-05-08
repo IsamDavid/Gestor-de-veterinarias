@@ -5,35 +5,71 @@
 
 .apartado1{
     background-color: #1f4287;
-    height: 180px;}
+    height: 150px;}
 
-
-.imag{
+.imagen_logo{
     margin-left: 100px;
     border-color: blanchedalmond;
     border-style: solid;
+    margin-right: 500px;
 }
+
+.nav {
+    padding-top: 60px;
+}
+
+.userR {
+    float: right;
+    border-radius: 10px;
+    border: 1px solid #d6d6d6;
+    margin-right: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d6d6d6;
+    font-size: 25px;
+  }
+
+.logo{
+    float: left;
+    margin-right: 150px;
+    color: #21E6C1;
+    font-size: 25px;
+    padding-top: 100px;
+}
+
 .posicion_logo{
     float: left;
-    padding-top: 10px;
+    padding-top: 25px;
 }
-
-
 
 .elegir_registro{
     background-color: #d6d6d6;
-    height: 200px;
+    height: 530px;
+    border-style: solid;
+    border-color: black;
+    font-size: 20px;
 }
 
+.elige_modo{
+    padding-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#1f4287;
+    font-size: 60px;
+}
 
 .posicion_veterinario{
     float: left;
-    margin-left: 300px; 
-    padding-top: 100px;
+    padding-top: 50px;
+    margin-left: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#1f4287;
+    font-size: 30px;
 }
 
 .posicion_dueño{
     float: right;
-    margin-right: 300px; 
-    padding-top: 100px;
+    padding-top: 50px;
+    margin-right: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#1f4287;
+    font-size: 30px;
 }

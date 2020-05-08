@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="122.946" height="122.946" viewBox="0 0 122.946 122.946">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_3" data-name="Rectángulo 3" width="122.946" height="122.946" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icono-registro-cliente" clip-path="url(#clip-path)">
+    <g id="bocadillo" transform="translate(0 0.001)">
+      <path id="Trazado_164" data-name="Trazado 164" d="M80.687,51.146H33.6A15.375,15.375,0,0,1,30.59,20.695,15.374,15.374,0,0,1,42.835,9.746a15.376,15.376,0,0,1,28.617,0A15.374,15.374,0,0,1,83.7,20.695a15.375,15.375,0,0,1-3.01,30.452ZM33.486,27.6H33.5Zm.251-7.2h0Z" transform="translate(4.33 -0.001)" fill="#fdbb45"/>
+      <path id="Trazado_165" data-name="Trazado 165" d="M76.225,20.695A15.373,15.373,0,0,0,63.98,9.746,15.4,15.4,0,0,0,49.672,0V51.146H73.216a15.375,15.375,0,0,0,3.01-30.452Z" transform="translate(11.801 -0.001)" fill="#ff7e27"/>
+      <path id="Trazado_166" data-name="Trazado 166" d="M3.2,94.108l9.535-65.574h95.96l9.458,65.578Z" transform="translate(0.76 6.778)" fill="#a2d8f4"/>
+      <path id="Trazado_167" data-name="Trazado 167" d="M97.654,28.534H49.672V94.11l57.44,0Z" transform="translate(11.801 6.778)" fill="#73bcff"/>
+      <path id="Trazado_168" data-name="Trazado 168" d="M80.99,79.71A12.523,12.523,0,0,1,71.955,75.9l-2.79-2.877H44.332l-2.78,2.867A12.617,12.617,0,0,1,21.8,60.42,12.618,12.618,0,0,1,41.542,44.941l2.789,2.877H69.165l2.78-2.867A12.617,12.617,0,0,1,91.7,60.42,12.614,12.614,0,0,1,80.99,79.71Z" transform="translate(4.725 9.771)" fill="#f4f4f7"/>
+      <path id="Trazado_169" data-name="Trazado 169" d="M86.534,53.751a12.619,12.619,0,0,0-21.665-8.8l-2.78,2.867H49.672v25.2H62.088l2.79,2.877A12.617,12.617,0,0,0,84.623,60.419a12.635,12.635,0,0,0,1.911-6.668Z" transform="translate(11.801 9.771)" fill="#e2e2eb"/>
+      <path id="Trazado_170" data-name="Trazado 170" d="M122.946,104.17H0V79.028H122.946Z" transform="translate(0 18.774)" fill="#fc569a"/>
+      <path id="Trazado_171" data-name="Trazado 171" d="M49.672,79.028h61.473V104.17H49.672Z" transform="translate(11.801 18.774)" fill="#d52d78"/>
+    </g>
+  </g>
+</svg>
