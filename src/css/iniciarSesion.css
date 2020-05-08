@@ -1,57 +1,90 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+h1{
+  padding: 0;
+  margin: 0;
 }
 body{
   background:url(../img/login.png) no-repeat center top;
-  
-
+  overflow: hidden;
 }
 .header__logo{
   width: 242px;
-  height: 101px;
+  height: 100px;
   position: relative;
   left: 125px;
   top: 25px;
-  /* filter: url(../img/logoN.svg) invert(0.8) saturate(100%) ; */
-}
-.content-login{
-  width: 527px;
-  height: 500px;
-  position: relative;
-  left: 420px;
-  background-color: aliceblue;
-  border-radius: 20px;
 }
 
 .content__icon{
-  height: 117px;
+  height: 133px;
   position: relative;
   left: 615px;
-  margin-bottom: 54px;
-}
-
-.content__titulo{
-  position: relative;
-  left: 556px;
-  font-size: 44px;
-  font-family: 'Times New Roman', Times, serif;
-  color: #FFFFFF;
+  top: -40px;
   
 }
 
-.content-login__inputUser{
-  width: 527px;
-  height: 54px;
-  border-radius: 15px;
-  border: 1px solid #dfe1e5;
+.content__title{
+  position: relative;
+  left: 556px;
+  font-size: 44px;
+  font-weight: bold;
+  color: #FFFFFF;
+  top: -20px;
 }
 
-body .content-login form .content-login__inputUser .user--icon{
-  background-image: url('../img/user.svg');
+.content__input--user input{
+  background-image: url(../img/user.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 18px;
-  height: 18px;
+  background-position: 30px;
+  width: 437px;
+  padding-left: 90px;
+  border-radius: 15px;
+  border: 1px solid #dfe1e5;
+  height: 54px;
+  position: relative;
+  left: 420px;
+  margin-bottom: 20px;
+  font-size: 29px; 
+}
+
+
+.content__input--password input{
+  background-image: url(../img/password.svg);
+  background-repeat: no-repeat;
+  background-position: 30px;
+  width: 437px;
+  padding-left: 90px;
+  border-radius: 15px;
+  border: 1px solid #dfe1e5;
+  height: 54px;
+  position: relative;
+  left: 420px;
+  margin-bottom: 20px;
+  font-size: 29px; 
+}
+
+.content__button{
+  width: 527px;
+  height: 71px;
+  border-radius: 15px;
+  border: 1px solid #1f4287;
+  background-color: #1F4287;
+  position: relative;
+  left: 420px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.content__register{
+  font-size: 20px;
+  color: #FFFFFF;
+  position: relative;
+  left: 513px;
+  top: -20px;
+  /* font-weight: normal; */
 }
