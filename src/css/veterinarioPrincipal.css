@@ -4,7 +4,8 @@
   }
 body{zoom: .75;
 background-color: #D6D6D6;
-overflow-x : hidden;}
+overflow-x : hidden;
+}
 .apartado1{
     background-color: #1f4287;
     height: 170px;}
@@ -76,7 +77,7 @@ ul {
     }
     #tabla{
         
-        width: 1090px;
+        width: 1250px;
         margin-right: auto;
         margin-left: auto;
         margin-top: 70px;
@@ -96,3 +97,27 @@ ul {
             position: relative;
             
             color: #FFFFFF;}
+
+    .datos{
+        height: 120px;
+    }h1{
+        font-size: 50px;
+        display: inline-block;
+        position: relative;
+    }
+    h1::after,h1::before{
+        content:'';
+        position: absolute;
+        width: 120px;
+        height: 2px;
+        background-color: #B6B3B3;
+        top: 0.65em;
+    }
+    h1::before{
+        left: -300px;
+        width: 300px;
+    }
+    h1::after{
+        right: -1500px;
+        width: 1500px;
+    }
