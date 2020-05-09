@@ -3,6 +3,9 @@
     margin:0;
   }
 
+li {float: right;}
+
+
 .apartado1{
     background-color: #1f4287;
     height: 150px;}
@@ -43,7 +46,7 @@
 
 .elegir_registro{
     background-color: #d6d6d6;
-    height: 530px;
+    height: 550px;
     border-style: solid;
     border-color: black;
     font-size: 20px;

@@ -1,0 +1,146 @@
+*{
+    border:0;
+    margin:0;
+  }
+
+.header{
+    background-color: #1f4287;
+    height: 150px;
+}
+
+.colordemenu{
+    color: white;
+}
+
+ol {
+    float: right;
+    margin-right: 100px;
+}
+
+
+.posicion_logo{
+    position: absolute;
+    float: left;
+    margin-left: 100px;
+    padding-top: 25px;
+}
+
+.barramenu{
+    float: right;
+   padding-right: 80px; 
+   position: relative;
+   padding-top: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 25px;
+}
+
+.title{
+    background-color: #ABB2B9;
+    position: absolute;
+    height: 50px;
+    left: 80px;
+    padding-top: 10px;
+    color: #1f4287;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+
+
+.datos{
+    background-color: #d6d6d6;
+    height: 545px;
+}
+
+.content__input--name input{
+    width: 180px;   /*ancho*/
+    height: 25px;   /*Largo*/
+    padding-left: 15px; /*Posición del texto adentro del cuadro*/
+    border-radius: 15px;
+    border: 1px solid #dfe1e5;
+    position: relative;
+    left: 200px;
+    top: 160px;
+    margin-bottom: 20px;
+    font-size: 18px; 
+}
+
+.content__input--marca input{
+    width: 180px;   
+    height: 25px;   
+    padding-left: 15px; /*Posición del texto adentro del cuadro*/
+    border-radius: 15px;
+    border: 1px solid #dfe1e5;
+    position: relative;
+    left: 547px;
+    top: 93px;
+    margin-bottom: 20px;
+    font-size: 18px; 
+}
+
+.content__input--precio input{
+    width: 100px;   
+    height: 25px;   
+    padding-left: 15px; /*Posición del texto adentro del cuadro*/
+    border-radius: 15px;
+    border: 1px solid #dfe1e5;
+    position: relative;
+    left: 894px;
+    top: 26px;
+    margin-bottom: 20px;
+    font-size: 18px; 
+}
+
+.content__input--descripcion input{
+    width: 520px;   /*ancho*/
+    height: 25px;   /*Largo*/
+    padding-left: 15px; /*Posición del texto adentro del cuadro*/
+    border-radius: 15px;
+    border: 1px solid #dfe1e5;
+    position: relative;
+    left: 200px;
+    top: 110px;
+    margin-bottom: 20px;
+    font-size: 18px; 
+}
+
+.content__input--stock input{
+    width: 100px;   
+    height: 25px;   
+    padding-left: 15px; /*Posición del texto adentro del cuadro*/
+    border-radius: 15px;
+    border: 1px solid #dfe1e5;
+    position: relative;
+    left: 887px;
+    top: 43px;
+    margin-bottom: 20px;
+    font-size: 18px; 
+}
+
+.content__button{
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #9FD3C7;
+    background-color: #9FD3C7;
+    position: relative;
+    top: 10px;
+    left: 760px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+
+  .content__register{
+    font-size: 15px;
+    color: #9FD3C7;
+    float: right;
+    padding-right: 350px;
+    padding-top: 20px;
+  }
+
+  .legend1{
+      padding-left: 220px;
+      padding-top: 30px;
+      font-size: 13px;
+  }
