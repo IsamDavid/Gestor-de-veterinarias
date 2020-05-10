@@ -1,0 +1,139 @@
+*{
+    border:0;
+    margin:0;
+  }
+
+.background_header{
+   /* border: 1px solid wheat; */
+    position: relative;
+    background-color: #1f4287;
+    height: 150px;
+}
+
+.logo{
+  /*  border: 1px solid wheat; */
+    top: 23px;
+    position: absolute;
+    left: 150px;
+}
+
+.barras{
+    /*border: 1px solid wheat; */
+    position: relative;
+    top: 40px;
+    float: right;
+    right: 230px;
+}
+
+.main{
+    /*border: 1px solid wheat; */
+    position: relative;
+    top: 45px;
+    float: right;
+    right: 93px;
+    color: #d6d6d6;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.second_header{
+    background-color:#d6d6d6;
+    position: relative;
+    height: 80px;
+}
+
+.add_service{
+    top: 52px;
+    left: 175px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #071e3d;
+    position: absolute;
+}
+
+.name_box input{
+    width: 220px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    position: relative;
+    top: 75px;
+    float: left;
+    left: 360px;
+    padding-left: 5px;
+    margin-bottom: 20px; 
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.price_box input{
+    background-position: 30px;
+    width: 120px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    position: relative;
+    top: 57px;
+    right: 397px;
+    float: right;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.descrip{   /* Cuadro */
+    border-style: solid;
+    border-radius: 8px;
+    position: absolute;
+    left: 350px;
+    padding-left: 5px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    top: 400px;
+}
+
+.name{
+    position: absolute;
+    left: 370px;
+    top: 280px;
+    color: #707070;
+}
+
+.desc_text{
+    position: absolute;
+    left: 370px;
+    top: 373px;
+    color: #707070;
+}
+
+.price{
+    top: 280px;
+    right: 465px;
+    float: right;
+    color: #707070;
+    position: absolute;
+}
+
+.save{
+    border-radius: 10px;
+    background-color: #248499;
+    color: white;
+    width: 140px;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 505px;
+    top: 300px;
+}
+
+.back{
+    position: relative;
+    float: right;
+    top: 307px;
+    right: 265px;
+}
