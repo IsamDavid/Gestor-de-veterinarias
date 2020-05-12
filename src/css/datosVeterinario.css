@@ -40,14 +40,86 @@
 .second_header{
     background-color:#d6d6d6;
     position: relative;
-    height: 80px;
+    height: 60px;
 }
 
 .datos{
-    top: 52px;
+    top: 32px;
     left: 175px;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
     color: #071e3d;
     position: absolute;
 }
+
+.name_box input{
+    width: 220px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    position: absolute;
+    top: 290px;
+    float: left;
+    left: 240px;
+    padding-left: 5px;
+    margin-bottom: 20px; 
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.name{
+    position: absolute;
+    left: 250px;
+    top: 265px;
+    color: #707070;
+}
+
+.apePat_box input{
+    position: absolute;
+    background-position: 30px;
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    position: relative;
+    top: 82px;
+    float: right;
+    right: 250px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.AP{
+    float: right;
+    right: 250px;
+    top: 305px;
+    color: #707070;
+    position: absolute
+}
+
+
+.apeMat_box input{
+    position: absolute
+    background-position: 30px;
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    position: relative;
+    top: 82px;
+    left: 400px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.AM{
+    left: 640px;
+    top: 305px;
+    color: #707070;
+    position: absolute;
+}
+
