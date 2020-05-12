@@ -13,9 +13,14 @@ body {
   height: 145px;
 }
 
+.header__menu{
+  display: flex;
+  justify-content: flex-end;
+}
 
 .header__menu ul{
   /* display: none; */
+
   list-style: none;
   padding: 0;
   position: absolute;
