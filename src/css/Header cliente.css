@@ -41,22 +41,28 @@ body {
   text-decoration: none; 
   color: #ffffff;
   font-size: 30px;
+  cursor: pointer;
 }
 .header__burger img{
   position: relative;
   top: 10px;
-  padding-right: 10px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
 .header__nav{
   top: 145px;
   position: relative  ;
-  display: none;
+  /* display: none; */
   float: right;
-  width: 380px;
+  width: 300px;
+  left: 100vw;
+  transition: .4s;
+}
+.is_activate{
   left: 245px;
 }
+
 .header__nav ul{
   float: right;
   list-style: none;
