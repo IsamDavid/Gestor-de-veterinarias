@@ -233,3 +233,24 @@
     color: #707070;
     position: absolute;
 }
+
+.save{
+    border-radius: 10px;
+    background-color: #248499;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    float: left;
+    left: 865px;
+    top: 570px;
+}
+
+.back{
+    position: absolute;
+    top: 576px;
+    float: left;
+    left: 1010px;
+}
