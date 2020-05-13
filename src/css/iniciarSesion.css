@@ -6,12 +6,18 @@
 h1{
   padding: 0;
   margin: 0;
+
 }
 body{
   background:url(../img/login.jpg);
-  overflow: hidden;
+  /* overflow: hidden; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fixed;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .header__logo{
   width: 242px;
@@ -78,8 +84,10 @@ body{
   position: relative;
   left: 420px;
   margin-bottom: 40px;
-  font-size: 30px;
+  font-size: 40px;
   color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px 5px rgba(0,0,0, .5);
 }
 
 .content__register{
@@ -89,4 +97,9 @@ body{
   left: 513px;
   top: -20px;
   /* font-weight: normal; */
+}
+.content__register a{
+  color: #dfe1e5;
+  font-weight: bold;
+  text-decoration: none;
 }
