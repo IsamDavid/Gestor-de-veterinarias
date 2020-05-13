@@ -25,6 +25,7 @@
     right: 230px;
 }
 
+
 .main{
     /*border: 1px solid wheat; */
     position: relative;
@@ -53,7 +54,7 @@
 }
 
 .name_box input{
-    width: 220px;
+    width: 180px;
     height: 25px;
     border-radius: 8px;
     border: 1px solid black;
@@ -61,7 +62,7 @@
     top: 290px;
     float: left;
     left: 240px;
-    padding-left: 5px;
+    padding-left: 6px;
     margin-bottom: 20px; 
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
@@ -77,49 +78,158 @@
 .apePat_box input{
     position: absolute;
     background-position: 30px;
-    width: 200px;
+    width: 150px;
     height: 25px;
     border-radius: 8px;
     border: 1px solid black;
-    position: relative;
-    top: 82px;
-    float: right;
-    right: 250px;
-    padding-left: 5px;
+    top: 290px;
+    float: left;
+    left: 567px;
+    padding-left: 6px;
     margin-bottom: 20px;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .AP{
-    float: right;
-    right: 250px;
-    top: 305px;
+    left: 575px;
+    top: 265px;
     color: #707070;
     position: absolute
 }
 
-
 .apeMat_box input{
-    position: absolute
+    position: absolute;
     background-position: 30px;
-    width: 200px;
+    width: 150px;
     height: 25px;
     border-radius: 8px;
     border: 1px solid black;
-    position: relative;
-    top: 82px;
-    left: 400px;
-    padding-left: 5px;
+    top: 290px;
+    float: right;
+    right: 300px;
+    padding-left: 6px;
     margin-bottom: 20px;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .AM{
-    left: 640px;
-    top: 305px;
+    right: 330px;
+    top: 265px;
     color: #707070;
     position: absolute;
 }
 
+.adress_box input{
+    position: absolute;
+    background-position: 30px;
+    width: 500px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    top: 390px;
+    float: left;
+    left: 240px;
+    padding-left: 6px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.adress{
+    left: 250px;
+    top: 365px;
+    color: #707070;
+    position: absolute;
+}
+
+.correo_box input{
+    position: absolute;
+    background-position: 30px;
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    top: 390px;
+    float: right;
+    right: 250px;
+    padding-left: 6px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.correo{
+    right: 330px;
+    top: 365px;
+    color: #707070;
+    position: absolute;
+}
+
+.password_box input{
+    position: absolute;
+    background-position: 30px;
+    width: 180px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    top: 490px;
+    float: left;
+    left: 240px;
+    padding-left: 6px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.password{
+    left: 250px;
+    top: 465px;
+    color: #707070;
+    position: absolute;
+}
+
+.phone_box input{
+    position: absolute;
+    background-position: 30px;
+    width: 120px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    top: 490px;
+    float: left;
+    left: 567px;
+    padding-left: 6px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.phone{
+    left: 575px;
+    top: 465px;
+    color: #707070;
+    position: absolute
+}
+
+.sex_box input{
+    position: absolute;
+    background-position: 30px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid black;
+    top: 525px;
+    float: right;
+    right: 300px;
+    margin-bottom: 20px;
+    font-size: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sex{
+    right: 300px;
+    top: 495px;
+    color: #707070;
+    position: absolute;
+}
