@@ -31,56 +31,57 @@
             <div class="name_box">
                 <!-- Nombre -->
                 <p class="name">Nombre (s):</p>
-                <input type="text">
+                <input type="text" name="nombres" required>
             </div>
             <br>
 
         <div class="apePat_box">
             <!-- Apellido Paterno -->
             <p class="AP">Apellido Paterno:</p>
-            <input type="text">
+            <input type="text" name="Apellid_paterno" required>
         </div>
             <br>
         
         <div class="apeMat_box">
             <!-- Apellido Materno -->
             <p class="AM">Apellido Materno:</p>
-            <input type="text">
+            <input type="text" name="Apellid_paterno" required>
         </div>
             <br>
 
         <div class="adress_box">
             <!-- Dirección -->
-            <p class="adress">Dirección</p>
-            <input type="text">
+            <p class="adress">Dirección:</p>
+            <input type="address" name="direccion" required>
         </div>
             <br>
         
         <div class="correo_box">
             <!-- Correo electrónico -->
-            <p class="correo">Correo electrónico</p>
-                <input type="email">
+            <p class="correo">Correo electrónico:</p>
+                <input type="email" name="correo" required>
         </div>
             <br>
         
         <div class="password_box">
             <!-- Contraseña -->
-            <p class="password">Contraseña</p>
-                <input type="password">
+            <p class="password">Contraseña:</p>
+                <input type="password" name="contraseña" required>
         </div>
             <br>
 
         <div class="phone_box">
             <!-- Teléfono -->
-            <p class="phone">Teléfono</p>
-                <input type="text">
+            <p class="phone">Teléfono:</p>
+                <input type="text" name="numero" required>
         </div>                
             <br>
         
         <div class="sex_box">
             <!-- Sexo -->
             <p class="sex">Genero: 
-                <select name="genero">
+                <select name="genero" required>
+                    <option> - - </option>
                     <option> Masculino </option>
                     <option> Femenino </option>
                   </select>
@@ -88,7 +89,7 @@
         </div>                
             <br>
 
-        <input class="save" type="submit" value="Guardar">
+        <input class="save" type="submit" value="Guardar" required>
         <a class="back" href="">Volver</a>
     </form>
         </form>
