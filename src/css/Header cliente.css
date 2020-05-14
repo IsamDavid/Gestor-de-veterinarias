@@ -56,11 +56,12 @@ body {
   /* display: none; */
   float: right;
   width: 300px;
-  left: 100vw;
+  left: 600px;
   transition: .4s;
 }
 .is_activate{
   left: 245px;
+
 }
 
 .header__nav ul{
@@ -82,7 +83,6 @@ body {
 .header__nav a{
   text-decoration: none;
   color: #fcfcfc;
-  
 }
 
 /* 

@@ -1,7 +1,7 @@
 console.log('Hola mundo')
 
 const nav = document.querySelector('.header__nav')
-const burgerButton = document.querySelector('.header__burger--img')
+const burgerButton = document.querySelector('.header__burger')
 const burgerText = document.querySelector('.header__burger--text')
 // console.log(burgerText)
 
