@@ -4,21 +4,18 @@
   }
 
 .background_header{
-   /* border: 1px solid wheat; */
     position: relative;
     background-color: #1f4287;
     height: 150px;
 }
 
 .logo{
-  /*  border: 1px solid wheat; */
     top: 23px;
     position: absolute;
     left: 150px;
 }
 
 .barras{
-    /*border: 1px solid wheat; */
     position: relative;
     top: 40px;
     float: right;
@@ -26,7 +23,6 @@
 }
 
 .main{
-    /*border: 1px solid wheat; */
     position: relative;
     top: 45px;
     float: right;
