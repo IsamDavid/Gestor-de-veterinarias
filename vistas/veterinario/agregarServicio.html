@@ -32,24 +32,24 @@
             <div class="name_box">
                 <!-- Nombre -->
                 <p class="name">Nombre: </p>
-                <input type="text">
+                <input type="text" name="nombre" required>
             </div>
             <br>
 
             <div class="price_box">
                 <!-- Precio -->
                 <p class="price">Costo: </p>
-                <input type="text">
+                <input type="text" name="costo" required>
             </div>
                 <br>
 
-            <input class="save" type="submit" value="Guardar">
+            <input class="save" type="submit" value="Guardar" name="guardar">
             <a class="back" href="">Volver</a>
     
             <div>
                 <!-- Descripción -->
                 <p class="desc_text">Descripción del Servicio:</p>
-                <textarea class="descrip" rows="7" cols="65" wrap="virtual"></textarea>
+                <textarea class="descrip" rows="7" cols="65" wrap="virtual" name="descripcion" required></textarea>
             </div>
         </form>
     </div>
