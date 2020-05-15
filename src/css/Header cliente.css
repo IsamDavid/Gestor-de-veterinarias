@@ -38,12 +38,15 @@ body {
 .car__nav{
   position: absolute;
   right: 400px;
+  /* top: 600px; */
   margin-top: 45px;
   /* display: none;   */
   width: 300px;
-  height: 300px;
+  height: 400px;
   padding: 0px 20px;
-  background: burlywood;
+  /* background: burlywood; */
+  background: #fcfcfc;
+  border: 1px solid #E1E1E1;
   text-align: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -51,7 +54,12 @@ body {
   border-top-left-radius: 5px;
   top: 100px;
   z-index: 2;
-  
+  display: none;
+}
+.is_activate-car{
+  /* bottom: 1050px; */
+  display: block;
+  /* text-align: center; */
 }
 
 /* .car__list table{
@@ -63,13 +71,35 @@ body {
   text-align: center;
   width: 270px;
   padding: 15px;
+  border-bottom: 1px solid #000000;
 }
 
-.header__car a{
+.car__details a{
   text-decoration:none;
-  color: #ffffff;
+  color: #1f4287;
   width: 250px;
   background: 1px solid #1f4287;  border-radius: 40px;
+  margin: 20px;
+  font-size: 15px;
+
+  /* padding-right: 30px; */
+}
+.car__details .vaciar-carrito{
+  text-decoration:none;
+  /* background: #1f4287; */
+  background: #21E6C1;
+  width: 140px;
+  height: 30px;
+  color: #f6f6f6;
+  
+  /* border: 1px solid #1f4287;   */
+  border: 1px solid #21E6C1;  
+  border-radius: 20px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  /* padding-right: 30px; */
 }
 
 .header__burger{
@@ -87,9 +117,9 @@ body {
   cursor: pointer;
   top: 10px;
   -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select:none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select:none;
 }
 .header__burger img{
   position: relative;
@@ -97,9 +127,9 @@ body {
   margin-right: 10px;
   cursor: pointer;
   -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select:none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select:none;
 }
 
 .header__nav{
@@ -114,11 +144,13 @@ body {
   z-index: 2;
   float: right;
 }
-/* 245 */
+
 .is_activate{
   left: 1050px;
   /* text-align: center; */
 }
+
+
 
 .header__nav ul{
   float: right;
@@ -150,9 +182,6 @@ body {
   /* background-position: cover; */
   background-size: cover;
   background-attachment: fixed;
-  
-  /* display: flex; */
-  /* visibility: visible; */
 }
 .main--title{
   position: absolute;
@@ -183,7 +212,6 @@ body {
   height: 415px;
   background-color: #FFFFFF;
   border: 1px solid #E1E1E1;
-  /* box-shadow: 2px 2px 2px 1px rgba(0,0,0,.5); */
 }
 
 .main__card--img{
@@ -230,5 +258,4 @@ body {
   padding: 0;
   position: relative;
   height: 140px;
-  hei
 }
