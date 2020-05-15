@@ -16,8 +16,7 @@ int main(){
 			k /= 10;
 		}
 		cout << salida.size() << endl;
-		for(int i=0;i<salida.size();++i)
-    {
+		for(int i=0;i<salida.size();++i){
 		  cout << salida[i] << " ";
 		}
 		cout << endl;
