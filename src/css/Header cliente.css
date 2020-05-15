@@ -3,8 +3,13 @@
   margin: 0;
 }
 body {
-  height: 100%;
+  /* height: fit-content; */
   overflow-x: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
   background-color: #f6f6f6;
   font-family: 'Times New Roman', Times, serif;
   
@@ -136,14 +141,15 @@ body {
 
 
 .main{
-  /* background-image: url(../../vistas/Fondo\ cliente.jpg); */
+  background-image: url(../../vistas/Fondo\ cliente.jpg);
   /* background-image: url(../../vistas/Huesos.jpg); */
   background-repeat: repeat-y;
   /* background-position: cover; */
   background-size: cover;
   background-attachment: fixed;
-  height: 1220px;
+  
   /* display: flex; */
+  /* visibility: visible; */
 }
 .main--title{
   position: absolute;
@@ -174,7 +180,7 @@ body {
   height: 415px;
   background-color: #FFFFFF;
   border: 1px solid #E1E1E1;
-  box-shadow: 2px 2px 2px 1px rgba(0,0,0,.5);
+  /* box-shadow: 2px 2px 2px 1px rgba(0,0,0,.5); */
 }
 
 .main__card--img{
