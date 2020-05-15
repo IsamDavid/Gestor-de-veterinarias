@@ -132,15 +132,64 @@ body {
 .main{
   background-image: url(../../vistas/Fondo\ cliente.jpg);
   /* background-image: url(../../vistas/Huesos.jpg); */
-  /* height: 720px; */
+  height: 1220px;
   background-repeat: repeat-y;
   /* background-position: cover; */
   background-size: cover;
   background-attachment: fixed;
 }
+.main--title{
+  position: absolute;
+  left: 575px;
+  line-height: 80px;
+  /* font-weight: 300; */
+  font-size: 50px;
+}
+.main__row{
+  position: relative;
+  width: 960px;
+  height: 415px;
+  background-color: #1f4287;
+  top:80px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.main__column{
+  position: relative;
+  width: 295px;
+  height: 415px;
+  background-color: #FFFFFF;
+  border: 1px solid #E1E1E1;
+}
 
-.Hola{
-  height: 20000px;
+.main__card--img{
+  width: 295px;
+  height: 185px;
+}
+
+.main__card--info{
+  /* text-align: left; */
+  padding: 10px 20px;
+}
+.main__card--info h3{
+  margin: 0px 0px 5px;
+}
+.main__card--info p{
+  margin: 0px 0px 10px;
+}
+.main__card--info .price{
+  font-weight: bold;
+}
+.card__button{
+  width: 255px;
+  height: 38px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #21E6C1;
+  background-color: #21E6C1;
+  color: #FFFFFF;
+  cursor: pointer;
+  /* box-shadow: 10px 10px 10px 5px rgba(0,0,0, .5); */
 }
 
 /* 
