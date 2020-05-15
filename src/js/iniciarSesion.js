@@ -1,4 +1,5 @@
-console.log('Hola mundo')
+
+// JS del menu desplegable 
 
 const nav = document.querySelector('.header__nav')
 const burgerButton = document.querySelector('.header__burger')
@@ -16,3 +17,4 @@ function hideShow() {
   nav.classList.add('is_activate')
   }
 }
+

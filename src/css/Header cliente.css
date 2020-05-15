@@ -5,7 +5,7 @@
 body {
   height: 100%;
   overflow-x: hidden;
-  background-color: #d6d6d6;
+  background-color: #f6f6f6;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -22,12 +22,43 @@ body {
   width: 240px;
   height: 100px;
 }
+.header__car--icon{
+  position: absolute;
+  right: 550px;
+  top: 60px;
+}
 
-.header__carrito{
-  position: relative;
-  float: right;
+.car__nav{
+  position: absolute;
   right: 450px;
   margin-top: 45px;
+  display: none;
+  width: 270px;
+  height: 300px;
+  background: burlywood;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  top: 100px;
+}
+
+/* .car__list table{
+  color: black;
+  width: 270px;
+  text-align: center;
+} */
+.car__list th{
+  text-align: center;
+  width: 270px;
+}
+
+.header__car a{
+  text-decoration:none;
+  color: #ffffff;
+  width: 250px;
+  background: 1px solid #1f4287;  border-radius: 40px;
 }
 
 .header__burger{
@@ -36,32 +67,44 @@ body {
   line-height: 140px;
   margin-right: 80px;
   left: 20px;
+  top: 10px;
 }
 .header__burger a{
   text-decoration: none; 
   color: #ffffff;
   font-size: 30px;
   cursor: pointer;
+  top: 10px;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
 }
 .header__burger img{
   position: relative;
   top: 10px;
   margin-right: 10px;
   cursor: pointer;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
 }
 
 .header__nav{
   top: 145px;
   position: relative  ;
   /* display: none; */
+  
   float: right;
   width: 300px;
-  left: 600px;
+  left: 520px;
   transition: .4s;
 }
+/* 245 */
 .is_activate{
-  left: 245px;
-
+  left: 210px;
+  /* text-align: center; */
 }
 
 .header__nav ul{
@@ -83,6 +126,21 @@ body {
 .header__nav a{
   text-decoration: none;
   color: #fcfcfc;
+}
+
+
+.main{
+  background-image: url(../../vistas/Fondo\ cliente.jpg);
+  /* background-image: url(../../vistas/Huesos.jpg); */
+  /* height: 720px; */
+  background-repeat: repeat-y;
+  /* background-position: cover; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.Hola{
+  height: 20000px;
 }
 
 /* 
