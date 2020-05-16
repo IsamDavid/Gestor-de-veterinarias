@@ -21,6 +21,7 @@ function hideShowCar() {
 const car = document.querySelector('.header__car--icon')
 const products = document.querySelector('.main')
 const listProduct = document.querySelector('#car__list tbody')
+let listIds = []
 
 console.log(car)
 console.log(products)
@@ -65,6 +66,12 @@ function readProduct(product){
 
 //Muestra el producto seleccionado en el carrito
 function insertCar(product) {
+  let amount = 1;
+  if(findSelected(product)){
+    //Si ya hay un item igual dentro del carrito
+    console.log('Ya hay elemento')
+  }else {
+  listIds.push(product.id)
   const row = document.createElement('tr')
   row.innerHTML = `
     <td class="navCar__img">
@@ -72,9 +79,30 @@ function insertCar(product) {
     </td>
     <td>${product.name}</td>  
     <td>${product.price}</td>  
+    <td>${amount}</td>  
     <td>
       <a href="#" class="borrar-curso" id="${product.id}">X </a> 
     </td>  
       `;
       listProduct.appendChild(row)
+  }
 }
+
+//Buscar si existe el elemento en el carrito
+function findSelected(product){
+  let verify = 0;
+  listIds.forEach(element => {
+    if(product.id == element) return verify = 1;
+  });
+  return verify;
+}
+  // if(verify){
+  //   // console.log('Se encontro el id dentro del array');
+  //   // console.log(listIds.indexOf(product.id))
+  //   return 
+    
+  // }else{
+  //   
+  //   // console.log('No se encontro ningun id y ya se agrego');
+  //   return 0
+    
