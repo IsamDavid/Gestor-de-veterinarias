@@ -52,7 +52,7 @@ ul {
     padding-top: 80px;
     float: right;}
 
-    table, tr{
+    table{
     background-color: #ffffff;
     border:#B6B3B3 1px solid;
     border-collapse: collapse;
@@ -74,9 +74,13 @@ ul {
     tr{
         height: 70px;
     }
+    .datos{
+        height: 100px;
+    }
     #tabla{
         
         width: 1500px;
+        height: 1500px;
         margin-right: auto;
         margin-left: auto;
         margin-top: 70px;
