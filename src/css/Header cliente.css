@@ -55,6 +55,8 @@ body {
   top: 100px;
   z-index: 2;
   display: none;
+  overflow-y: scroll;
+  
 }
 .is_activate-car{
   /* bottom: 1050px; */
@@ -100,6 +102,10 @@ body {
   font-size: 15px;
   cursor: pointer;
   /* padding-right: 30px; */
+}
+.navCar__img img{
+  width: 100px;
+  height: 62px;
 }
 
 .header__burger{
