@@ -21,6 +21,7 @@ function hideShowCar() {
 const car = document.querySelector('.header__car--icon')
 const products = document.querySelector('.main')
 const listProduct = document.querySelector('#car__list tbody')
+
 let listIds = []
 
 console.log(car)
@@ -60,17 +61,23 @@ function readProduct(product){
   }
 
   insertCar(dataProduct);
-  console.log(dataProduct)
+  // console.log(dataProduct)
   
 }
 
 //Muestra el producto seleccionado en el carrito
 function insertCar(product) {
-  let amount = 1;
   if(findSelected(product)){
-    //Si ya hay un item igual dentro del carrito
-    console.log('Ya hay elemento')
+    //Si ya hay un item igual dentro del carrito  
+    // if(product.id == )
+    // console.log(listProduct.target);
+    actual = parseInt(document.getElementById(product.id).innerText) 
+    console.log(typeof(actual))
+  document.getElementById(product.id).innerText = actual+1;
+
+
   }else {
+  // let amount = 1;
   listIds.push(product.id)
   const row = document.createElement('tr')
   row.innerHTML = `
@@ -79,7 +86,7 @@ function insertCar(product) {
     </td>
     <td>${product.name}</td>  
     <td>${product.price}</td>  
-    <td>${amount}</td>  
+    <td id="${product.id}">${1}</td>  
     <td>
       <a href="#" class="borrar-curso" id="${product.id}">X </a> 
     </td>  
@@ -87,6 +94,11 @@ function insertCar(product) {
       listProduct.appendChild(row)
   }
 }
+
+//Buscar primero la etiqueta que tenga ese id y que su valor sea == a ell valor de product.id
+//Esto nos dara el td de la lista del carrito que tiene este id. Despues solo guardamos esa ruta y la modificamos con su amount 
+
+
 
 //Buscar si existe el elemento en el carrito
 function findSelected(product){
@@ -96,6 +108,14 @@ function findSelected(product){
   });
   return verify;
 }
+
+// function searchProductList(){
+
+// }
+
+
+
+
   // if(verify){
   //   // console.log('Se encontro el id dentro del array');
   //   // console.log(listIds.indexOf(product.id))
