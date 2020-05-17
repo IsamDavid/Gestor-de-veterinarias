@@ -18,14 +18,15 @@ function hideShowCar() {
 //Carrito productos
 
 //variables
-const car = document.querySelector('.header__car--icon')
+const car = document.querySelector('.car__nav')
 const products = document.querySelector('.main')
 const listProduct = document.querySelector('#car__list tbody')
+// let globalProduct;
 
 let listIds = []
 
-console.log(car)
-console.log(products)
+// console.log(car)
+// console.log(products)
 
 //listeners
 chargeEventListeners()
@@ -33,6 +34,8 @@ chargeEventListeners()
 function chargeEventListeners(){
   //Dispara cuando presionamos "Añadir"
   products.addEventListener('click',buyProducts);
+
+  car.addEventListener('click',deleteProduct);
 }
 
 
@@ -44,6 +47,8 @@ function buyProducts(e) {
   //Delegation para agregar al carrito
   if (e.target.classList.contains('card__button')){
     const product = e.target.parentElement.parentElement;
+    // console.log(product);
+    
     //Enviamos el curso seleccionado para tomar sus datos 
   readProduct(product)
   }
@@ -61,19 +66,20 @@ function readProduct(product){
   }
 
   insertCar(dataProduct);
-  // console.log(dataProduct)
+  // console.log(product.querySelector('input').getAttribute('id'))
   
 }
 
 //Muestra el producto seleccionado en el carrito
 function insertCar(product) {
-  if(findSelected(product)){
+  // globalProduct = product
+  if(findSelectedAdd(product)){
     //Si ya hay un item igual dentro del carrito  
     // if(product.id == )
     // console.log(listProduct.target);
     actual = parseInt(document.getElementById(product.id).innerText) 
-    console.log(typeof(actual))
-  document.getElementById(product.id).innerText = actual+1;
+    // console.log(typeof(actual))
+    document.getElementById(product.id).innerText = actual+1;
 
 
   }else {
@@ -81,48 +87,70 @@ function insertCar(product) {
   listIds.push(product.id)
   const row = document.createElement('tr')
   row.innerHTML = `
-    <td class="navCar__img">
+    <td id="${product.id}" class="navCar__img">
       <img src="${product.img}">
     </td>
     <td>${product.name}</td>  
     <td>${product.price}</td>  
     <td id="${product.id}">${1}</td>  
     <td>
-      <a href="#" class="borrar-curso" id="${product.id}">X </a> 
+      <a href="#" class="delete-product" id="${product.id}">X </a> 
     </td>  
       `;
       listProduct.appendChild(row)
   }
 }
 
-//Buscar primero la etiqueta que tenga ese id y que su valor sea == a ell valor de product.id
-//Esto nos dara el td de la lista del carrito que tiene este id. Despues solo guardamos esa ruta y la modificamos con su amount 
-
-
 
 //Buscar si existe el elemento en el carrito
-function findSelected(product){
+function findSelectedAdd(product){
   let verify = 0;
   listIds.forEach(element => {
+    console.log(element);
     if(product.id == element) return verify = 1;
   });
   return verify;
 }
 
-// function searchProductList(){
-
-// }
-
-
-
-
-  // if(verify){
-  //   // console.log('Se encontro el id dentro del array');
-  //   // console.log(listIds.indexOf(product.id))
-  //   return 
+//elimina el curso del carrito en el dom 
+function deleteProduct(e){
+  e.preventDefault();
+  
+  // console.log('Eliminado');
+  let cant
+  let idx
+  
+  // console.log(globalProduct);
+  
+  // idx = document.getElementById(globalProduct.id)
+  // cant = parseInt(document.getElementById(globalProduct.id).innerText) 
+  // if(cant==1){
+    // const prueba= e.target.classList.contains('id')
+    // console.log(prueba)
+    const rowCar=e.target.parentElement.parentElement
+    console.log(rowCar.querySelector('td').getAttribute('id'))
+    // console.log(rowCar.querySelector('td'))
+    // console.log(rowCar);
+    // console.log(rowCar.querySelector('td'))
+    // console.log(cant)
+    // console.log(rowCar.querySelector('td #id').innerText);
     
-  // }else{
-  //   
-  //   // console.log('No se encontro ningun id y ya se agrego');
-  //   return 0
-    
+    if(e.target.classList.contains('delete-product')){
+      // e.target.parentElement.parentElement.remove();
+      // removeListIds(id);
+    // } 
+  } 
+}
+
+//¿Qué necesito? 
+//Necesito el id para sacarlo de la lista y la cantidad para restarle
+
+
+function removeListIds(id){
+  listIds.forEach(element => {
+    if (id == element){
+      listIds.splice(element,1)
+    }
+  });
+  return verify;
+}
