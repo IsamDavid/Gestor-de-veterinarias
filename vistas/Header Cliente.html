@@ -11,7 +11,26 @@
 
   <div class="header">
     <img class="header__logo"  src="../src/img/Logo blanco.png" alt="Logo patitaspet's">
-    <img class="header__carrito" src="../src/img/carrito.svg" alt="icono carrito">
+    <img class="header__car--icon" src="../src/img/carrito.svg" alt="icono carrito">
+        <div class="car__nav">
+          <table id="car__list" class="car__list">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cant</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div class="car__details">
+            <a href="#" class="details" >Detalles</a>
+            <input class="vaciar-carrito" type="submit" value="Vaciar Carrito">
+          </div>
+      </div>
+    <!-- </div> -->
       <div class="header__burger">
         <img class="header__burger--img" src="../src/img/Menu.svg" alt="icono menu">
         <a class="header__burger--text">Menú</a>
@@ -27,55 +46,262 @@
           <li><a href="#">Cerrar sesión</a></li>
         </ul>
       </div>
-    </div>
   </div>
 
+  <div class="main">
+    <h1 class="main--title">Productos</h1>
+    <div class="main__row">
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Croquetas para perro</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$200</p>
+            <input class="card__button" id="1" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para Gatos</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$2000</p>
+            <input class="card__button" id="2.1" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para aves</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 2 años.</p>
+            <p class="price">$50</p>
+            <input class="card__button" id="3.1" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
 
-  <div id="main">
-    <div class="Citas"> 
-  
-      <div id="tabla">
-        <table>
-          <tr>
-            <th>Fecha</th>
-            <th>Hora</th>
-            <th>Veterinario</th>
-            <th>Mascota</th>
-            <th>Servicio</th>
-            <th>Producto</th>
-          </tr>
-          <tr>
-            <td>123456</td>
-            <td>Carlos</td>
-            <td>De Roa</td>
-            <td>Pérez</td>
-            <td>53032961
-              <br>
-              <input class="content__button" type="submit" value="Aceptar">
-              <input class="content__button" type="submit" value="Rechazar">
-            </td>
-          </tr>
-          <tr>
-            <td>564789</td>
-            <td>Ulises</td>
-            <td>Pérez</td>
-            <td>Martínez</td>
-            <td>53030714
-              <br>
-              <input class="content__button" type="submit" value="Aceptar">
-              <input class="content__button" type="submit" value="Rechazar">
-            </td>
-          </tr>
-        </table>
+  <!-- Fila 2 -->
+  <div class="main__row">
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Croquetas para perro</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$200</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para Gatos</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$2000</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para aves</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 2 años.</p>
+            <p class="price">$50</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
       </div>
     </div>
 
-    <div>
-
+    <div class="main__row">
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Croquetas para perro</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$200</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para Gatos</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$2000</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para aves</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 2 años.</p>
+            <p class="price">$50</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
     </div>
-  </div> 
-  <script src="../src/js/iniciarSesion.js"></script>
+
+    <div class="main__row">
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Croquetas para perro</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$200</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para Gatos</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$2000</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para aves</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 2 años.</p>
+            <p class="price">$50</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main__row">
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Croquetas para perro</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$200</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para Gatos</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$2000</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para aves</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 2 años.</p>
+            <p class="price">$50</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main__row">
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Croquetas para perro</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$200</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para Gatos</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 4 años.</p>
+            <p class="price">$2000</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__card">
+          <img src="croquetas.jpg" class="main__card--img">
+          <div class="main__card--info">
+            <h3>Comida para aves</h3>
+            <p>Veterinario: Juan Pedro</p>
+            <p>Croquetas para perros pequeños de máximo 2 años.</p>
+            <p class="price">$50</p>
+            <input class="card__button" type="submit" value="Añadir">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <!-- Cerrar el main -->
+</div>
+
+  
+  <div class="footer">
+
+  </div>
+
+
+
+<script src="../src/js/iniciarSesion.js"></script>
+<script src="../src/js/carrito.js"></script>
 </body>
-
-
 </html>
+
