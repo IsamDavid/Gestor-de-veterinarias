@@ -1,28 +1,98 @@
-*{
-    border:0;
-    margin:0;
-  }
-
-.background_header{
-   /* border: 1px solid wheat; */
-    position: relative;
-    background-color: #1f4287;
-    height: 150px;
+* {
+  border: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f6f6f6;
+  font-family: "Times New Roman", Times, serif;
+}
+.header {
+  background-color: #1f4287;
+  height: 145px;
+  width: 100%;
 }
 
-.logo{
-  /*  border: 1px solid wheat; */
-    top: 23px;
-    position: absolute;
-    left: 150px;
+.header__logo {
+  position: relative;
+  left: 50px;
+  top: 25px;
+  width: 240px;
+  height: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
 }
 
-.barras{
-    /*border: 1px solid wheat; */
-    position: relative;
-    top: 40px;
-    float: right;
-    right: 230px;
+.header__burger {
+  position: relative;
+  float: right;
+  line-height: 140px;
+  margin-right: 80px;
+  left: 20px;
+  top: 10px;
+}
+.header__burger a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  top: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+.header__burger img {
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+
+.header__nav {
+  top: 145px;
+  position: absolute;
+  width: 300px;
+  left: 1365px;
+  transition: 0.4s;
+  z-index: 2;
+  float: right;
+}
+
+.is_activate {
+  left: 1075px;
+}
+
+.header__nav ul {
+  float: right;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  width: 300px;
+  background-color: #1f4287;
+  text-align: center;
+  font-size: 25px;
+  height: 510px;
+}
+.header__nav li {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #fcfcfc;
 }
 
 .main{
