@@ -1,75 +1,100 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+  <head>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../../src/css/veterinario/modificarProducto.css"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Modificar Productos</title>
+  </head>
 
-<head>
-  <link type="text/css" rel="stylesheet" href="../../src/css/veterinario/modificarProducto.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Modificar Productos</title>
-</head>
-
-<body>
+  <body>
     <!--Fondo azul-->
-    <div class="background_header">
-        <a class="logo" href="../index.html">
-            <img src="../../src/img/Logo blanco.png" width="242px" height="101px"> 
-        </a>
-        
-        <a href="">
-            <img class="barras" src="../../src/img/barramenu.svg" width="50px" > 
-            <h2 class="main">Menú</h2>
-        </a>
+    <div class="header">
+      <img
+        class="header__logo"
+        src="../../src/img/Logo blanco.png"
+        alt="Logo patitaspet's"
+      />
+      <div class="header__burger">
+        <img
+          class="header__burger--img"
+          src="../../src/img/Menu.svg"
+          alt="icono menu"
+        />
+        <a class="header__burger--text">Menú</a>
+      </div>
+      <div class="header__nav">
+        <ul>
+          <li><a href="#">Perfil</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Citas</a></li>
+          <li><a href="#">Seguimiento</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Cerrar sesión</a></li>
+        </ul>
+      </div>
     </div>
 
     <!--Segundo fondo gris-->
     <div class="second_header">
-        <h2 class="add_products" align="center">Modificar Producto</h2>
+      <h2 class="add_products" align="center">Modificar Producto</h2>
     </div>
 
     <!--Tercer fondo blanco-->
     <div class="third_header">
-        <form action="">
-            <div class="name_box">
-                <!-- Nombre -->
-                <p class="name">Nombre del producto</p>
-                <input type="text" name="nombre" required>
-            </div>
-            <br>
+      <form action="">
+        <div class="name_box">
+          <!-- Nombre -->
+          <p class="name">Nombre del producto</p>
+          <input type="text" name="nombre" required />
+        </div>
+        <br />
 
-            <div class="mark_box">
-                <!-- Marca -->
-                <p class="mark">Marca</p>
-                <input type="text" name="marca" required>
-            </div>
-                <br>
+        <div class="mark_box">
+          <!-- Marca -->
+          <p class="mark">Marca</p>
+          <input type="text" name="marca" required />
+        </div>
+        <br />
 
-            <div class="price_box">
-                <!-- Precio -->
-                <p class="price">Precio</p>
-                <input type="text" name="precio" required> 
-            </div>
-                <br>
+        <div class="price_box">
+          <!-- Precio -->
+          <p class="price">Precio</p>
+          <input type="text" name="precio" required />
+        </div>
+        <br />
 
-            <div class="description_box">
-                <!-- Descripción -->
-                <p class="description">Descripción</p>
-                <input type="text" name="descripcion" required>
-            </div>
-                <br>
-            
-            <div class="stock_box">
-                <!-- Stock -->
-                <p class="stock">Stock</p>
-                <input type="text" name="stock" required>
-            </div>
-                <br>
+        <div class="description_box">
+          <!-- Descripción -->
+          <p class="description">Descripción</p>
+          <input type="text" name="descripcion" required />
+        </div>
+        <br />
 
-                <input class="save" type="submit" value="Guardar cambios" name="guardar">
-                
-                <!-- <button type="submit" value="Entrar">Entrar</button> -->
-            <p class="info_stock">*El stock es con el que contaras en el momento que creas el producto.</p>
-            <a class="back" href="">Volver</a>
-        </form>
+        <div class="stock_box">
+          <!-- Stock -->
+          <p class="stock">Stock</p>
+          <input type="text" name="stock" required />
+        </div>
+        <br />
+
+        <input
+          class="save"
+          type="submit"
+          value="Guardar cambios"
+          name="guardar"
+        />
+
+        <!-- <button type="submit" value="Entrar">Entrar</button> -->
+        <p class="info_stock">
+          *El stock es con el que contaras en el momento que creas el producto.
+        </p>
+        <a class="back" href="">Volver</a>
+      </form>
     </div>
-    
-</body>
+  </body>
 </html>
