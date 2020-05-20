@@ -129,8 +129,8 @@ function deleteProduct(e){
     // console.log(prueba)
     const rowCar=e.target.parentElement.parentElement
     console.log(rowCar.querySelector('td').getAttribute('id'))
-    // console.log(rowCar.querySelector('td'))
-    // console.log(rowCar);
+    console.log(rowCar.querySelector('td'))
+    console.log(rowCar);
     // console.log(rowCar.querySelector('td'))
     // console.log(cant)
     // console.log(rowCar.querySelector('td #id').innerText);
