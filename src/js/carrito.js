@@ -154,3 +154,9 @@ function removeListIds(id){
   });
   return verify;
 }
+
+
+(async function data(){
+  const resolve = await fetch('https://randomuser.me/api/dsadas');
+  console.log(resolve);
+})()
