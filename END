@@ -1,0 +1,32 @@
+[33mcommit 223c77b329ebd2054c3b699b9aa53a8d39402045[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Isam Espinosa <isamdavid17@gmail.com>
+Date:   Mon May 18 22:07:10 2020 -0500
+
+    Se agrego script del menu a modificarServicio.html
+
+[1mdiff --git a/vistas/veterinario/modificarServicio.html b/vistas/veterinario/modificarServicio.html[m
+[1mindex fa9e7db..f8f8e95 100644[m
+[1m--- a/vistas/veterinario/modificarServicio.html[m
+[1m+++ b/vistas/veterinario/modificarServicio.html[m
+[36m@@ -25,10 +25,10 @@[m
+       </div>[m
+       <div class="header__nav">[m
+         <ul>[m
+[31m-          <li><a href="#">Perfil</a></li>[m
+[32m+[m[32m          <li><a href="datosVeterinario.html">Perfil</a></li>[m
+           <li><a href="#">Productos</a></li>[m
+           <li><a href="#">Servicios</a></li>[m
+[31m-          <li><a href="#">Citas</a></li>[m
+[32m+[m[32m          <li><a href="citasVeterinario.html">Citas</a></li>[m
+           <li><a href="#">Seguimiento</a></li>[m
+           <li><a href="#">Blog</a></li>[m
+           <li><a href="#">Cerrar sesión</a></li>[m
+[36m@@ -69,6 +69,6 @@[m
+             </div>[m
+         </form>[m
+     </div>[m
+[31m-    [m
+[32m+[m[32m    <script src="../../src/js/headerVeterinario.js"></script>[m[41m    [m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m

@@ -1,256 +1,325 @@
-*{
-    border:0;
-    margin:0;
-  }
-
-.background_header{
-   /* border: 1px solid wheat; */
-    position: relative;
-    background-color: #1f4287;
-    height: 150px;
+* {
+  border: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f6f6f6;
+  font-family: "Times New Roman", Times, serif;
+}
+.header {
+  background-color: #1f4287;
+  height: 145px;
+  width: 100%;
 }
 
-.logo{
-  /*  border: 1px solid wheat; */
-    top: 23px;
-    position: absolute;
-    left: 150px;
+.header__logo {
+  position: relative;
+  left: 50px;
+  top: 25px;
+  width: 240px;
+  height: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
 }
 
-.barras{
-    /*border: 1px solid wheat; */
-    position: relative;
-    top: 40px;
-    float: right;
-    right: 230px;
+.header__burger {
+  position: relative;
+  float: right;
+  line-height: 140px;
+  margin-right: 80px;
+  left: 20px;
+  top: 10px;
+}
+.header__burger a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  top: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+.header__burger img {
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
 }
 
-
-.main{
-    /*border: 1px solid wheat; */
-    position: relative;
-    top: 45px;
-    float: right;
-    right: 93px;
-    color: #d6d6d6;
-    font-size: 35px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
+.header__nav {
+  top: 145px;
+  position: absolute;
+  width: 300px;
+  left: 1365px;
+  transition: 0.4s;
+  z-index: 2;
+  float: right;
 }
 
-.second_header{
-    background-color:#d6d6d6;
-    position: relative;
-    height: 60px;
+.is_activate {
+  left: 1075px;
 }
 
-.datos{
-    top: 32px;
-    left: 175px;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #071e3d;
-    position: absolute;
+.header__nav ul {
+  float: right;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  width: 300px;
+  background-color: #1f4287;
+  text-align: center;
+  font-size: 25px;
+  height: 510px;
+}
+.header__nav li {
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
-.name_box input{
-    width: 180px;
-    height: 25px;
-    border-radius: 8px;
-    border: 1px solid black;
-    position: absolute;
-    top: 290px;
-    float: left;
-    left: 240px;
-    padding-left: 6px;
-    margin-bottom: 20px; 
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+.header__nav a {
+  text-decoration: none;
+  color: #fcfcfc;
 }
 
-.name{
-    position: absolute;
-    left: 250px;
-    top: 265px;
-    color: #707070;
+.main {
+  /*border: 1px solid wheat; */
+  position: relative;
+  top: 45px;
+  float: right;
+  right: 93px;
+  color: #d6d6d6;
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
 }
 
-.apePat_box input{
-    position: absolute;
-    background-position: 30px;
-    width: 150px;
-    height: 25px;
-    border-radius: 8px;
-    border: 1px solid black;
-    top: 290px;
-    float: left;
-    left: 567px;
-    padding-left: 6px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+.second_header {
+  background-color: #d6d6d6;
+  position: relative;
+  height: 60px;
 }
 
-.AP{
-    left: 575px;
-    top: 265px;
-    color: #707070;
-    position: absolute
+.datos {
+  top: 32px;
+  left: 175px;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  color: #071e3d;
+  position: absolute;
 }
 
-.apeMat_box input{
-    position: absolute;
-    background-position: 30px;
-    width: 150px;
-    height: 25px;
-    border-radius: 8px;
-    border: 1px solid black;
-    top: 290px;
-    float: right;
-    right: 300px;
-    padding-left: 6px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+.name_box input {
+  width: 180px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid black;
+  position: absolute;
+  top: 290px;
+  float: left;
+  left: 240px;
+  padding-left: 6px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.AM{
-    right: 330px;
-    top: 265px;
-    color: #707070;
-    position: absolute;
+.name {
+  position: absolute;
+  left: 250px;
+  top: 265px;
+  color: #707070;
 }
 
-.adress_box input{
-    position: absolute;
-    background-position: 30px;
-    width: 500px;
-    height: 25px;
-    border-radius: 8px;
-    border: 1px solid black;
-    top: 390px;
-    float: left;
-    left: 240px;
-    padding-left: 6px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+.apePat_box input {
+  position: absolute;
+  background-position: 30px;
+  width: 150px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid black;
+  top: 290px;
+  float: left;
+  left: 567px;
+  padding-left: 6px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.adress{
-    left: 250px;
-    top: 365px;
-    color: #707070;
-    position: absolute;
+.AP {
+  left: 575px;
+  top: 265px;
+  color: #707070;
+  position: absolute;
 }
 
-.correo_box input{
-    position: absolute;
-    background-position: 30px;
-    width: 200px;
-    height: 25px;
-    border-radius: 8px;
-    border: 1px solid black;
-    top: 390px;
-    float: right;
-    right: 250px;
-    padding-left: 6px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+.apeMat_box input {
+  position: absolute;
+  background-position: 30px;
+  width: 150px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid black;
+  top: 290px;
+  float: right;
+  right: 300px;
+  padding-left: 6px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.correo{
-    right: 330px;
-    top: 365px;
-    color: #707070;
-    position: absolute;
+.AM {
+  right: 330px;
+  top: 265px;
+  color: #707070;
+  position: absolute;
 }
 
-.password_box input{
-    position: absolute;
-    background-position: 30px;
-    width: 180px;
-    height: 25px;
-    border-radius: 8px;
-    border: 1px solid black;
-    top: 490px;
-    float: left;
-    left: 240px;
-    padding-left: 6px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+.adress_box input {
+  position: absolute;
+  background-position: 30px;
+  width: 500px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid black;
+  top: 390px;
+  float: left;
+  left: 240px;
+  padding-left: 6px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.password{
-    left: 250px;
-    top: 465px;
-    color: #707070;
-    position: absolute;
+.adress {
+  left: 250px;
+  top: 365px;
+  color: #707070;
+  position: absolute;
 }
 
-.phone_box input{
-    position: absolute;
-    background-position: 30px;
-    width: 120px;
-    height: 25px;
-    border-radius: 8px;
-    border: 1px solid black;
-    top: 490px;
-    float: left;
-    left: 567px;
-    padding-left: 6px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+.correo_box input {
+  position: absolute;
+  background-position: 30px;
+  width: 200px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid black;
+  top: 390px;
+  float: right;
+  right: 250px;
+  padding-left: 6px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.phone{
-    left: 575px;
-    top: 465px;
-    color: #707070;
-    position: absolute
+.correo {
+  right: 330px;
+  top: 365px;
+  color: #707070;
+  position: absolute;
 }
 
-.sex_box input{
-    position: absolute;
-    background-position: 30px;
-    height: 20px;
-    border-radius: 2px;
-    border: 1px solid black;
-    top: 525px;
-    float: right;
-    right: 300px;
-    margin-bottom: 20px;
-    font-size: 5px;
-    font-family: 'Times New Roman', Times, serif;
+.password_box input {
+  position: absolute;
+  background-position: 30px;
+  width: 180px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid black;
+  top: 490px;
+  float: left;
+  left: 240px;
+  padding-left: 6px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.sex{
-    right: 300px;
-    top: 495px;
-    color: #707070;
-    position: absolute;
+.password {
+  left: 250px;
+  top: 465px;
+  color: #707070;
+  position: absolute;
 }
 
-.save{
-    border-radius: 10px;
-    background-color: #248499;
-    color: white;
-    width: 80px;
-    height: 30px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    float: left;
-    left: 865px;
-    top: 570px;
+.phone_box input {
+  position: absolute;
+  background-position: 30px;
+  width: 120px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid black;
+  top: 490px;
+  float: left;
+  left: 567px;
+  padding-left: 6px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.back{
-    position: absolute;
-    top: 576px;
-    float: left;
-    left: 1010px;
+.phone {
+  left: 575px;
+  top: 465px;
+  color: #707070;
+  position: absolute;
+}
+
+.sex_box input {
+  position: absolute;
+  background-position: 30px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid black;
+  top: 525px;
+  float: right;
+  right: 300px;
+  margin-bottom: 20px;
+  font-size: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sex {
+  right: 300px;
+  top: 495px;
+  color: #707070;
+  position: absolute;
+}
+
+.save {
+  border-radius: 10px;
+  background-color: #248499;
+  color: white;
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  float: left;
+  left: 865px;
+  top: 570px;
+}
+
+.back {
+  position: absolute;
+  top: 576px;
+  float: left;
+  left: 1010px;
 }

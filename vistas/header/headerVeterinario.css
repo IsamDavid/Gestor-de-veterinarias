@@ -18,13 +18,17 @@ body {
   width: 100%;
 }
 
-/*
-.background_header{
-    position: relative;
-    background-attachment: green;
-    height: 10px;
+.header__logo {
+  position: relative;
+  left: 50px;
+  top: 25px;
+  width: 240px;
+  height: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
 }
-*/
 
 .header__burger {
   position: relative;
@@ -89,33 +93,4 @@ body {
 .header__nav a {
   text-decoration: none;
   color: #fcfcfc;
-}
-
-
-.main{
-    position: relative;
-    top: 45px;
-    float: right;
-    right: 93px;
-    color: #d6d6d6;
-    font-size: 35px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-}
-
-.second_header{
-    background-image: url(../../img/background_Veterinario.jpg);
-    height: 551px;
-    position: relative;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.citas{
-    top: 52px;
-    left: 175px;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #071e3d;
-    position: absolute;
 }
