@@ -5,8 +5,8 @@
 
 .background_header{
     position: relative;
-    background-color: #1f4287;
-    height: 130px;
+    background-attachment: green;
+    height: 10px;
 }
 
 .logo{
