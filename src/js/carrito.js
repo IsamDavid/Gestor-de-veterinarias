@@ -75,8 +75,11 @@ function insertCar(product) {
   
   if(findSelectedAdd(product)){
     // if(listProduct)
-    row = listProduct.querySelector('tr');
-    console.log(row.getAttribute(product.id));
+    row = document.getElementById(`${product.id}`)
+    // row = listProduct.getElementById('#1');
+    actual =(parseInt(row.querySelector('.cant').innerText));
+    row.querySelector('.cant').innerText = actual + 1;
+    
     
     // Document.getElementById
     // if(product.id == )
@@ -98,7 +101,7 @@ function insertCar(product) {
       </td>
       <td>${product.name}</td>  
       <td>${product.price}</td> 
-      <td id="${product.id}">${1}</td>  
+      <td class="cant">${1}</td>  
       <td>
         <a href="#" class="delete-product" id="${product.id}">X </a> 
       </td>  
