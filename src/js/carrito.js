@@ -35,7 +35,7 @@ chargeEventListeners()
 function chargeEventListeners(){
   //Dispara cuando presionamos "Añadir"
   products.addEventListener('click',buyProducts);
-  car.addEventListener('click',deleteProduct);
+  listProduct.addEventListener('click',deleteProduct);
 }
 
 
@@ -47,7 +47,7 @@ function buyProducts(e) {
   //Delegation para agregar al carrito
   if (e.target.classList.contains('card__button')){
     const product = e.target.parentElement.parentElement;
-    console.log(product);
+    // console.log(product);
     // debugger
     //Enviamos el curso seleccionado para tomar sus datos 
   readProduct(product)
@@ -70,26 +70,11 @@ function readProduct(product){
 }
 
 //Muestra el producto seleccionado en el carrito
-function insertCar(product) {
-  // globalProduct = product
-  
+function insertCar(product){  
   if(findSelectedAdd(product)){
-    // if(listProduct)
-    row = document.getElementById(`${product.id}`)
-    // row = listProduct.getElementById('#1');
-    actual =(parseInt(row.querySelector('.cant').innerText));
-    row.querySelector('.cant').innerText = actual + 1;
-    
-    
-    // Document.getElementById
-    // if(product.id == )
-    //Si ya hay un item igual dentro del carrito  
-    // let productCant = product.querySelector('')
-    // console.log(listProduct.children.childrenNodes);
-    // actual = parseInt(listProduct.querySelector('td #id').innerText) 
-    // console.log(typeof(actual))
-    // document.getElementById(product.id).innerText = actual+1;
-    
+    let row = document.getElementById(`${product.id}`)
+    let current =(parseInt(row.querySelector('.cant').innerText));
+    row.querySelector('.cant').innerText = current + 1;
   }else {
     listIds.push(product.id)
     const row = document.createElement('tr')
@@ -117,7 +102,7 @@ function insertCar(product) {
 function findSelectedAdd(product){
   let verify = 0;
   listIds.forEach(element => {
-    // console.log(element);
+    console.log(`Lista de Encontrados: ${element}`);
     if(product.id == element) return verify = 1;
   });
   return verify;
@@ -127,9 +112,42 @@ function findSelectedAdd(product){
 function deleteProduct(e){
   e.preventDefault();
   
+  //Obtenemos la fila del elemento
+  let rowCarProduct=e.target.parentElement.parentElement;
+  currentCant = (parseInt(rowCarProduct.querySelector('.cant').innerText));
+  if(currentCant>1){
+  rowCarProduct.querySelector('.cant').innerText = currentCant - 1;
+  }else{
+    let idCurrent = e.target.getAttribute('id');
+    removeListIds(idCurrent);
+    e.target.parentElement.parentElement.remove();
+    //Si la cantidad es igual a 1 entonces hay que eliminar el producto de la lista
+  }
+  
+}
+function removeListIds(id){
+  let aux;
+  if(listIds.length == 1){
+    listIds.pop();
+  }else{
+    for(let i=0; i< listIds.length; ++i){
+      console.log(`Lista de eliminados: ${listIds[i]}`);
+      if (id == listIds[i]){
+        aux=listIds[listIds.length-1]
+        listIds[listIds.length - 1]= listIds[i];
+        listIds[aux];
+        listIds.pop();
+        // listIds.remove(listIds[i]);
+        return;
+      }
+    }
+  }
+}
+
+
   // console.log('Eliminado');
-  let cant
-  let idx
+  // let cant
+  // let idx
   
   // console.log(globalProduct);
   
@@ -138,32 +156,21 @@ function deleteProduct(e){
   // if(cant==1){
     // const prueba= e.target.classList.contains('id')
     // console.log(prueba)
-    const rowCar=e.target.parentElement.parentElement
-    console.log(rowCar.querySelector('td').getAttribute('id'))
-    console.log(rowCar.querySelector('td'))
-    console.log(rowCar);
+    
+    
+    // const rowCar=e.target.parentElement.parentElement
+    // console.log(rowCar.querySelector('td').getAttribute('id'))
+    // console.log(rowCar.querySelector('td'))
+    // console.log(rowCar);
+    
+    
     // console.log(rowCar.querySelector('td'))
     // console.log(cant)
     // console.log(rowCar.querySelector('td #id').innerText);
     
-    if(e.target.classList.contains('delete-product')){
-      // e.target.parentElement.parentElement.remove();
-      // removeListIds(id);
-    // } 
-  } 
-}
-
-//¿Qué necesito? 
-//Necesito el id para sacarlo de la lista y la cantidad para restarle
-
-
-function removeListIds(id){
-  listIds.forEach(element => {
-    if (id == element){
-      listIds.splice(element,1)
-    }
-  });
-  return verify;
-}
-
+  //   if(e.target.classList.contains('delete-product')){
+  //     // 
+  //     // 
+  //   // } 
+  // } 
 
