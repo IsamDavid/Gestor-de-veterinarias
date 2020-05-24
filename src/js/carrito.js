@@ -126,21 +126,23 @@ function deleteProduct(e){
   
 }
 function removeListIds(id){
-  let aux;
   if(listIds.length == 1){
     listIds.pop();
   }else{
-    for(let i=0; i< listIds.length; ++i){
-      console.log(`Lista de eliminados: ${listIds[i]}`);
-      if (id == listIds[i]){
-        aux=listIds[listIds.length-1]
-        listIds[listIds.length - 1]= listIds[i];
-        listIds[aux];
-        listIds.pop();
-        // listIds.remove(listIds[i]);
-        return;
-      }
-    }
+    const arrayAux = listIds.filter(ids=>ids!=id);
+    listIds = arrayAux;
+    console.log(listIds);
+    // for(let i=0; i< listIds.length; ++i){
+    //   console.log(`Lista de eliminados: ${listIds[i]}`);
+    //   if (id == listIds[i]){
+    //     aux=listIds[listIds.length-1]
+    //     listIds[listIds.length - 1]= listIds[i];
+    //     listIds[aux];
+    //     listIds.pop();
+    //     // listIds.remove(listIds[i]);
+    //     return;
+    //   }
+    // }
   }
 }
 
