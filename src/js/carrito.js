@@ -86,6 +86,7 @@ function insertCar(product){
         listProduct.appendChild(row)
         console.log(listIds);        
     }
+    saveProductLocalStorage(product);
 }
 
 //Buscar si existe el elemento en el carrito
@@ -129,4 +130,27 @@ function emptyCarEvent(e){
   }
   listIds = [];
   return false;
+}
+
+function saveProductLocalStorage(product){
+  let products;
+  //Toma el valor de un array con datos de LS o vacio
+  products = getProductLocalStorage();
+  
+  //El producto seleccionado se agrega al array
+  products.push(product);
+
+  localStorage.setItem('product',JSON.stringify(products));
+}
+
+
+function getProductLocalStorage() {
+  let productLS;
+
+  if(localStorage.getItem('product')===null){
+    productLS = [];
+  }else {
+    productLS = JSON.parse(localStorage.getItem('product'))
+  }
+  return productLS;
 }
