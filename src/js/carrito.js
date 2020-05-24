@@ -23,7 +23,7 @@ const products = document.querySelector('.main')
 const listProduct = document.querySelector('#car__list tbody')
 // let globalProduct;
 
-let listIds = []
+// let listIds = []
 
 // console.log(car)
 // console.log(products)
@@ -34,7 +34,6 @@ chargeEventListeners()
 function chargeEventListeners(){
   //Dispara cuando presionamos "Añadir"
   products.addEventListener('click',buyProducts);
-
   car.addEventListener('click',deleteProduct);
 }
 
@@ -47,15 +46,15 @@ function buyProducts(e) {
   //Delegation para agregar al carrito
   if (e.target.classList.contains('card__button')){
     const product = e.target.parentElement.parentElement;
-    // console.log(product);
-    
+    console.log(product);
+    // debugger
     //Enviamos el curso seleccionado para tomar sus datos 
   readProduct(product)
   }
   
 }
 
-//Esta función lee el producto
+//Esta función lee el producto y guarda sus datos
 
 function readProduct(product){
   const dataProduct = {
@@ -67,25 +66,25 @@ function readProduct(product){
 
   insertCar(dataProduct);
   // console.log(product.querySelector('input').getAttribute('id'))
-  
 }
 
 //Muestra el producto seleccionado en el carrito
 function insertCar(product) {
   // globalProduct = product
-  if(findSelectedAdd(product)){
-    //Si ya hay un item igual dentro del carrito  
-    // if(product.id == )
-    // console.log(listProduct.target);
-    actual = parseInt(document.getElementById(product.id).innerText) 
-    // console.log(typeof(actual))
-    document.getElementById(product.id).innerText = actual+1;
+  // if(findSelectedAdd(product)){
+  //   //Si ya hay un item igual dentro del carrito  
+  //   // if(product.id == )
+  //   // console.log(listProduct.target);
+  //   actual = parseInt(document.getElementById(product.id).innerText) 
+  //   // console.log(typeof(actual))
+  //   document.getElementById(product.id).innerText = actual+1;
 
 
-  }else {
+  // }else {
   // let amount = 1;
-  listIds.push(product.id)
+  // listIds.push(product.id)
   const row = document.createElement('tr')
+  row.setAttribute('id', product.id)
   row.innerHTML = `
     <td id="${product.id}" class="navCar__img">
       <img src="${product.img}">
@@ -97,8 +96,10 @@ function insertCar(product) {
       <a href="#" class="delete-product" id="${product.id}">X </a> 
     </td>  
       `;
+      console.log(row);
       listProduct.appendChild(row)
-  }
+      // debugger 
+  // }
 }
 
 
@@ -156,7 +157,3 @@ function removeListIds(id){
 }
 
 
-(async function data(){
-  const resolve = await fetch('https://randomuser.me/api/dsadas');
-  console.log(resolve);
-})()
