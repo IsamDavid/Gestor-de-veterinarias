@@ -128,4 +128,5 @@ function emptyCarEvent(e){
     listProduct.removeChild(listProduct.firstChild)
   }
   listIds = [];
+  return false;
 }
