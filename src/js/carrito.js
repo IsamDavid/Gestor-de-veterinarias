@@ -21,9 +21,10 @@ function hideShowCar() {
 const car = document.querySelector('.car__nav')
 const products = document.querySelector('.main')
 const listProduct = document.querySelector('#car__list tbody')
+let cant = 1;
+let listIds = []
 // let globalProduct;
 
-// let listIds = []
 
 // console.log(car)
 // console.log(products)
@@ -71,35 +72,41 @@ function readProduct(product){
 //Muestra el producto seleccionado en el carrito
 function insertCar(product) {
   // globalProduct = product
-  // if(findSelectedAdd(product)){
-  //   //Si ya hay un item igual dentro del carrito  
-  //   // if(product.id == )
-  //   // console.log(listProduct.target);
-  //   actual = parseInt(document.getElementById(product.id).innerText) 
-  //   // console.log(typeof(actual))
-  //   document.getElementById(product.id).innerText = actual+1;
-
-
-  // }else {
-  // let amount = 1;
-  // listIds.push(product.id)
-  const row = document.createElement('tr')
-  row.setAttribute('id', product.id)
-  row.innerHTML = `
-    <td id="${product.id}" class="navCar__img">
-      <img src="${product.img}">
-    </td>
-    <td>${product.name}</td>  
-    <td>${product.price}</td>  
-    <td id="${product.id}">${1}</td>  
-    <td>
-      <a href="#" class="delete-product" id="${product.id}">X </a> 
-    </td>  
-      `;
-      console.log(row);
-      listProduct.appendChild(row)
-      // debugger 
-  // }
+  
+  if(findSelectedAdd(product)){
+    // if(listProduct)
+    row = listProduct.querySelector('tr');
+    console.log(row.getAttribute(product.id));
+    
+    // Document.getElementById
+    // if(product.id == )
+    //Si ya hay un item igual dentro del carrito  
+    // let productCant = product.querySelector('')
+    // console.log(listProduct.children.childrenNodes);
+    // actual = parseInt(listProduct.querySelector('td #id').innerText) 
+    // console.log(typeof(actual))
+    // document.getElementById(product.id).innerText = actual+1;
+    
+  }else {
+    listIds.push(product.id)
+    const row = document.createElement('tr')
+    //Le agregamos un id al elemento tr para que lo manejemos general
+    row.setAttribute('id', product.id)
+    row.innerHTML = `
+      <td class="navCar__img">
+        <img src="${product.img}">
+      </td>
+      <td>${product.name}</td>  
+      <td>${product.price}</td> 
+      <td id="${product.id}">${1}</td>  
+      <td>
+        <a href="#" class="delete-product" id="${product.id}">X </a> 
+      </td>  
+        `;
+        // console.log(row);
+        listProduct.appendChild(row)
+        console.log(listIds);        
+    }
 }
 
 
@@ -107,7 +114,7 @@ function insertCar(product) {
 function findSelectedAdd(product){
   let verify = 0;
   listIds.forEach(element => {
-    console.log(element);
+    // console.log(element);
     if(product.id == element) return verify = 1;
   });
   return verify;
