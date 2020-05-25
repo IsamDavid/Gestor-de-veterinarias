@@ -228,18 +228,18 @@ function deleteProductLocalStorage(productId){
   productsLS = getProductLocalStorage(product2)
   if(productsLS[0].cantProduct>1){
     productsLS[0].cantProduct-=1;
+    localStorage.setItem(`products ${productId}`, JSON.stringify(productsLS))
   }else{
     if (listIdsLS.length==1){
       //Que solo tiene un item en la lista
       localStorage.removeItem(`products ${productId}`)
       localStorage.removeItem('ids')
     } else if (listIdsLS.length>1){
-      localStorage.setItem(`products ${productId}`, JSON.stringify(productsLS));
       const arrayAux2 = listIdsLS.filter(id => id != productId);
       listIdsLS = arrayAux2;
-      console.log(arrayAux2);
-      console.log(listIdsLS);
+      localStorage.removeItem(`products ${productId}`)
       localStorage.setItem('ids', JSON.stringify(listIdsLS))
+      // localStorage.setItem(`products ${productId}`, JSON.stringify(productsLS))
     }
   }
 }
