@@ -23,6 +23,7 @@ const products = document.querySelector('.main')
 const listProduct = document.querySelector('#car__list tbody')
 const emptyCar = document.querySelector('.vaciar-carrito')
 let listIds = []
+let listIdsLS = []
 
 chargeEventListeners()
 
@@ -35,7 +36,7 @@ function chargeEventListeners(){
   emptyCar.addEventListener('click',emptyCarEvent);
 
   //Al cargar la página, mostrar LocalStorage
-  document.addEventListener('DOMContentLoaded',readLocalStorage);
+  document.addEventListener("DOMContentLoaded",readLocalStorage);
 }
 
 
@@ -73,6 +74,9 @@ function insertCar(product){
     row.querySelector('.cant').innerText = current + 1;
   }else {
     listIds.push(product.id)
+    listIdsLS.push(product.id)
+    localStorage.setItem('ids', JSON.stringify(listIdsLS));
+
     const row = document.createElement('tr')
     //Le agregamos un id al elemento tr para que lo manejemos general
     row.setAttribute('id', product.id)
@@ -142,8 +146,6 @@ function saveProductLocalStorage(product){
   //Toma el valor de un array con datos de LS o vacio
   products = getProductLocalStorage(product);
   
-  // console.log(products);
-
   //Buscamos dentro de la lista que nos regresa la función de getProductLocalStorage
   //Si es que ya tiene dentro un item con el mismo id para ya no repetir el template
   
@@ -162,8 +164,7 @@ function saveProductLocalStorage(product){
 
 
 function getProductLocalStorage(product) {
-  let productsLS;
-  
+  let productsLS;   
   if(localStorage.getItem(`products ${product.id}`)){
     productsLS = JSON.parse(localStorage.getItem(`products ${product.id}`))
     console.log('Encontro una lista ya existente');
@@ -173,11 +174,44 @@ function getProductLocalStorage(product) {
   return productsLS;
 }
 
+
 function readLocalStorage(){
   let productsLS;
-  
-  productsLS = getProductLocalStorage();
+  idsLS = JSON.parse(localStorage.getItem(`ids`))
+  const product2 = {
+    id: 0
+  }
+  // console.log(idsLS);    
+  for(let i=0;i<idsLS.length;++i){
+    product2.id = idsLS[i];
+    
+  // productsLS = getProductLocalStorage();
+  productsLS = getProductLocalStorage(product2);
 
-  console.log(productsLS);
+  productsLS.forEach(product => {
+    // localStorage.getItem()
+    const row = document.createElement('tr')
+    //Le agregamos un id al elemento tr para que lo manejemos general
+    row.setAttribute('id', product.id)
+    row.innerHTML = `
+        <td class="navCar__img">
+          <img src="${product.img}">
+        </td>
+        <td>${product.name}</td>  
+        <td>${product.price}</td> 
+        <td class="cant">${product.cantProduct}</td>  
+        <td>
+          <a href="#" class="delete-product" id="${product.id}">X </a> 
+        </td>  
+          `;
+    listProduct.appendChild(row)
+    // console.log(productsLS);
+    
+  });
+//Termina el for
+}
+
+  // console.log(productsLS);
   
+
 }
