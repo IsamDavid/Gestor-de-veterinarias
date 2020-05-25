@@ -3,6 +3,8 @@
 const carNav = document.querySelector('.car__nav')
 const carButton = document.querySelector('.header__car--icon')
 
+console.log(localStorage.length);
+
 
 carButton.addEventListener('click', hideShowCar)
 
@@ -22,6 +24,7 @@ const car = document.querySelector('.car__nav')
 const products = document.querySelector('.main')
 const listProduct = document.querySelector('#car__list tbody')
 const emptyCar = document.querySelector('.vaciar-carrito')
+// let cont=0;
 let listIds = []
 let listIdsLS = []
 
@@ -69,10 +72,13 @@ function readProduct(product){
 //Muestra el producto seleccionado en el carrito
 function insertCar(product){  
   if(findSelectedAdd(product)){
+    console.log('Encontro un item dentro del storage');
+    
     let row = document.getElementById(`${product.id}`)
     let current =(parseInt(row.querySelector('.cant').innerText));
     row.querySelector('.cant').innerText = current + 1;
   }else {
+    console.log(listIdsLS);
     listIds.push(product.id)
     listIdsLS.push(product.id)
     localStorage.setItem('ids', JSON.stringify(listIdsLS));
@@ -94,6 +100,7 @@ function insertCar(product){
         listProduct.appendChild(row)
         // console.log(listIds);        
     }
+    // cont+=1;
     saveProductLocalStorage(product);
 }
 
@@ -127,7 +134,7 @@ function deleteProduct(e){
     e.target.parentElement.parentElement.remove();
     deleteProductLocalStorage(productId)
   }
-  
+  // cont-=1;
 }
 function removeListIds(id){
   //Si la cantidad es igual a 1 entonces hay que eliminar el producto de la lista
@@ -185,7 +192,15 @@ function getProductLocalStorage(product) {
 
 function readLocalStorage(){
   let productsLS;
+  if (localStorage.length>0){
+  listIds = JSON.parse(localStorage.getItem('ids'))
+  listIdsLS = JSON.parse(localStorage.getItem('ids'))
+}
   idsLS = JSON.parse(localStorage.getItem('ids'))
+  console.log('idsLS = '+ idsLS);
+  console.log('ListaIds = '+ listIds);
+  console.log('ListaIdsLS = '+ listIdsLS);
+  
   const product2 = {
     id: 0
   }
@@ -195,6 +210,8 @@ function readLocalStorage(){
     
   // productsLS = getProductLocalStorage();
   productsLS = getProductLocalStorage(product2);
+  // listIdsLS = getProductLocalStorage(product2);
+  // listIds = getProductLocalStorage(product2);
 
   productsLS.forEach(product => {
     // localStorage.getItem()
@@ -225,25 +242,38 @@ function deleteProductLocalStorage(productId){
     id: 0,
   }
   product2.id = productId;
+  //Devuelve el objeto pero del id que le decimos que queremos
   productsLS = getProductLocalStorage(product2)
+  //Si la cantidad del producto es Mayor que 1 entonces solo va a restar y guardar el LS
   if(productsLS[0].cantProduct>1){
     productsLS[0].cantProduct-=1;
     localStorage.setItem(`products ${productId}`, JSON.stringify(productsLS))
   }else{
-    if (listIdsLS.length==1){
-      //Que solo tiene un item en la lista
+    //La cantidad del producto es 1 por lo que tenemos dos casos posibles
+    //Que tengamos más de 1 item en el carrito o que solo tengamos 1 item
+    //Si es 1 solo item entonces borramos la lista de IDs del LS
+    if (listIdsLS.length===1){
+      //Que solo tiene un item en la lista de ids
       localStorage.removeItem(`products ${productId}`)
       localStorage.removeItem('ids')
-    } else if (listIdsLS.length>1){
+      console.log('Solo hay un item en el carrito');
+      
+      // delete listIdsLS;
+      // delete listIds; 
+
+    }else{
+
       const arrayAux2 = listIdsLS.filter(id => id != productId);
       listIdsLS = arrayAux2;
       localStorage.removeItem(`products ${productId}`)
-      localStorage.setItem('ids', JSON.stringify(listIdsLS))
-      // localStorage.setItem(`products ${productId}`, JSON.stringify(productsLS))
+      localStorage.setItem('ids', JSON.stringify(arrayAux2))
+      delete arrayAux2 ;
     }
   }
 }
 
 function emptyCarLS(){  
   localStorage.clear();
+  delete listIdsLS;
+  delete listIds; 
 }
