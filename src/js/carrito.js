@@ -109,16 +109,23 @@ function findSelectedAdd(product){
 //elimina el producto del carrito en el dom, solo elimina 1 producto a la vez.
 function deleteProduct(e){
   e.preventDefault();
-  
+  let productId,
+      rowCarProduct;
   //Obtenemos la fila del elemento
-  let rowCarProduct=e.target.parentElement.parentElement;
+  rowCarProduct=e.target.parentElement.parentElement;
+  productId = rowCarProduct.querySelector('a').getAttribute('id');
+  // console.log(productId);
+  
   currentCant = (parseInt(rowCarProduct.querySelector('.cant').innerText));
   if(currentCant>1){
   rowCarProduct.querySelector('.cant').innerText = currentCant - 1;
+  deleteProductLocalStorage(productId)
+
   }else{
     let idCurrent = e.target.getAttribute('id');
     removeListIds(idCurrent);
     e.target.parentElement.parentElement.remove();
+    deleteProductLocalStorage(productId)
   }
   
 }
@@ -137,12 +144,14 @@ function emptyCarEvent(e){
     listProduct.removeChild(listProduct.firstChild)
   }
   listIds = [];
+  //vaciar  Local Storage
+  emptyCarLS()
   return false;
 }
 
+//Guardar datos en localStorage
 function saveProductLocalStorage(product){
   let products;
-  let pos=7;
   //Toma el valor de un array con datos de LS o vacio
   products = getProductLocalStorage(product);
   
@@ -167,7 +176,6 @@ function getProductLocalStorage(product) {
   let productsLS;   
   if(localStorage.getItem(`products ${product.id}`)){
     productsLS = JSON.parse(localStorage.getItem(`products ${product.id}`))
-    console.log('Encontro una lista ya existente');
   }else{
     productsLS = [];
   }
@@ -177,7 +185,7 @@ function getProductLocalStorage(product) {
 
 function readLocalStorage(){
   let productsLS;
-  idsLS = JSON.parse(localStorage.getItem(`ids`))
+  idsLS = JSON.parse(localStorage.getItem('ids'))
   const product2 = {
     id: 0
   }
@@ -204,14 +212,38 @@ function readLocalStorage(){
           <a href="#" class="delete-product" id="${product.id}">X </a> 
         </td>  
           `;
-    listProduct.appendChild(row)
-    // console.log(productsLS);
-    
+    listProduct.appendChild(row)    
   });
 //Termina el for
 }
+}
 
-  // console.log(productsLS);
-  
+function deleteProductLocalStorage(productId){
+  // productsLS = JSON.parse(localStorage.getItem(`productId`))
+  let productsLS;
+  const product2 = {
+    id: 0,
+  }
+  product2.id = productId;
+  productsLS = getProductLocalStorage(product2)
+  if(productsLS[0].cantProduct>1){
+    productsLS[0].cantProduct-=1;
+  }else{
+    if (listIdsLS.length==1){
+      //Que solo tiene un item en la lista
+      localStorage.removeItem(`products ${productId}`)
+      localStorage.removeItem('ids')
+    } else if (listIdsLS.length>1){
+      localStorage.setItem(`products ${productId}`, JSON.stringify(productsLS));
+      const arrayAux2 = listIdsLS.filter(id => id != productId);
+      listIdsLS = arrayAux2;
+      console.log(arrayAux2);
+      console.log(listIdsLS);
+      localStorage.setItem('ids', JSON.stringify(listIdsLS))
+    }
+  }
+}
 
+function emptyCarLS(){  
+  localStorage.clear();
 }
