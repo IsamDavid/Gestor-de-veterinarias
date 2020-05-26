@@ -36,7 +36,8 @@ function chargeEventListeners(){
   //Borramos los productos desde el boton de la X
   listProduct.addEventListener('click',deleteProduct);
   //Vaciamos todo el carrito 
-  emptyCar.addEventListener('click',emptyCarEvent);
+  // emptyCar.addEventListener('click',emptyCarEvent);
+  emptyCar.addEventListener('click',emptyCarLS);
 
   //Al cargar la página, mostrar LocalStorage
   document.addEventListener("DOMContentLoaded",readLocalStorage);
@@ -146,14 +147,16 @@ function removeListIds(id){
   }
 }
 //Función para vaciar todo el carrito
-function emptyCarEvent(e){
-  while (listProduct.firstChild){
-    listProduct.removeChild(listProduct.firstChild)
+function emptyCarEvent(state){
+  console.log('El estado es ' + state);
+  if(state){
+    while (listProduct.firstChild){
+      listProduct.removeChild(listProduct.firstChild)
+    }
+    listIds = [];
+    //vaciar  Local Storage
+    return false;
   }
-  listIds = [];
-  //vaciar  Local Storage
-  emptyCarLS()
-  return false;
 }
 
 //Guardar datos en localStorage
@@ -196,7 +199,7 @@ function readLocalStorage(){
   listIds = JSON.parse(localStorage.getItem('ids'))
   listIdsLS = JSON.parse(localStorage.getItem('ids'))
 }
-  idsLS = JSON.parse(localStorage.getItem('ids'))
+  let idsLS = JSON.parse(localStorage.getItem('ids'))
   console.log('idsLS = '+ idsLS);
   console.log('ListaIds = '+ listIds);
   console.log('ListaIdsLS = '+ listIdsLS);
@@ -273,7 +276,25 @@ function deleteProductLocalStorage(productId){
 }
 
 function emptyCarLS(){  
-  localStorage.clear();
-  delete listIdsLS;
-  delete listIds; 
+  swal({
+    title: "¿Estás seguro?",
+    text: "Una vez eliminado, tendras que volver a elegir los productos!",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+  })
+    .then((willDelete) => {
+      if (willDelete) {
+        swal("Los productos en su carrito han sido eliminados :( ", {
+          icon: "success",
+        });
+        // console.log('Se presiono el botón vaciar carrito');
+        listIdsLS.length = 0;
+        listIds.length = 0;
+        localStorage.clear();
+        emptyCarEvent(true);
+      } else {
+        swal("Tus productos siguen en el carrito :) ");
+      }
+    });
 }
