@@ -106,7 +106,6 @@ body {
 .second_header{
     background-image: url(../../img/background_Veterinario.jpg);
     height: 551px;
-    position: relative;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -118,4 +117,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: #071e3d;
     position: absolute;
+}
+
+.busqueda{
+  position: absolute;
+  padding-left: 15px;
+
 }
