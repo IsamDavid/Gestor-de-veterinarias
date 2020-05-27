@@ -116,3 +116,11 @@
       font-family: 'Times New Roman', Times, serif;
       font-weight: normal;
   }
+
+.follow{
+    font-style: italic;
+    top: 170px;
+    position: absolute;
+    left: 120px;
+    font-size: 40px;
+}
