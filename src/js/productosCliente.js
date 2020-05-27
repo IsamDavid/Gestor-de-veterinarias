@@ -1,9 +1,8 @@
-//Ocultar el carrito 
+//JS Solo para la pagina Prodcutos
 
 const carNav = document.querySelector('.car__nav')
 const carButton = document.querySelector('.header__car--icon')
 
-console.log(localStorage.length);
 
 
 carButton.addEventListener('click', hideShowCar)
@@ -24,6 +23,7 @@ const car = document.querySelector('.car__nav')
 const products = document.querySelector('.main')
 const listProduct = document.querySelector('#car__list tbody')
 const emptyCar = document.querySelector('.vaciar-carrito')
+const buyCar = document.querySelector('.buy')
 // let cont=0;
 let listIds = []
 let listIdsLS = []
@@ -33,6 +33,9 @@ chargeEventListeners()
 function chargeEventListeners(){
   //Dispara cuando presionamos "Añadir"
   products.addEventListener('click',buyProducts);
+  //Mandamos al usuario a la pagina donde muestra todo su carrito 
+  //y el botón de pagar 
+  buyCar.addEventListener('click',buy);
   //Borramos los productos desde el boton de la X
   listProduct.addEventListener('click',deleteProduct);
   //Vaciamos todo el carrito 
@@ -45,6 +48,12 @@ function chargeEventListeners(){
 
 
 //funciones
+
+function buy(){
+  // e.preventDefault();
+  document.location.href = "../../vistas/cliente/carritoCliente.html"
+}
+
 
 //función que añade producto al carrito 
 function buyProducts(e) {
@@ -73,13 +82,12 @@ function readProduct(product){
 //Muestra el producto seleccionado en el carrito
 function insertCar(product){  
   if(findSelectedAdd(product)){
-    console.log('Encontro un item dentro del storage');
+    // console.log('Encontro un item dentro del storage');
     
     let row = document.getElementById(`${product.id}`)
     let current =(parseInt(row.querySelector('.cant').innerText));
     row.querySelector('.cant').innerText = current + 1;
   }else {
-    console.log(listIdsLS);
     listIds.push(product.id)
     listIdsLS.push(product.id)
     localStorage.setItem('ids', JSON.stringify(listIdsLS));
@@ -148,7 +156,7 @@ function removeListIds(id){
 }
 //Función para vaciar todo el carrito
 function emptyCarEvent(state){
-  console.log('El estado es ' + state);
+  // console.log('El estado es ' + state);
   if(state){
     while (listProduct.firstChild){
       listProduct.removeChild(listProduct.firstChild)
@@ -171,7 +179,7 @@ function saveProductLocalStorage(product){
   const state = products.some(item=>{
     return item.id == product.id; 
   })
-  console.log(state);
+  // console.log(state);
   if(state){
     products[0].cantProduct+=1;
     localStorage.setItem(`products ${product.id}`,JSON.stringify(products));
@@ -200,9 +208,6 @@ function readLocalStorage(){
   listIdsLS = JSON.parse(localStorage.getItem('ids'))
 }
   let idsLS = JSON.parse(localStorage.getItem('ids'))
-  console.log('idsLS = '+ idsLS);
-  console.log('ListaIds = '+ listIds);
-  console.log('ListaIdsLS = '+ listIdsLS);
   
   const product2 = {
     id: 0
@@ -259,7 +264,6 @@ function deleteProductLocalStorage(productId){
       //Que solo tiene un item en la lista de ids
       localStorage.removeItem(`products ${productId}`)
       localStorage.removeItem('ids')
-      console.log('Solo hay un item en el carrito');
       
       // delete listIdsLS;
       // delete listIds; 

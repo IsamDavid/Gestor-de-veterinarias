@@ -2,15 +2,16 @@
 <html>
 
 <head>
-  <link type="text/css" rel="stylesheet" href="../src/css/Header Cliente.css">
+  <link type="text/css" rel="stylesheet" href="../../src/css/cliente/headerCliente.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Veterinario Principal</title>
+  <title>PatitasPet's</title>
 </head>
 
 <body>
+
   <div class="header">
-    <img class="header__logo"  src="../src/img/Logo blanco.png" alt="Logo patitaspet's">
-    <img class="header__car--icon" src="../src/img/carrito.svg" alt="icono carrito">
+    <img class="header__logo"  src="../../src/img/Logo blanco.png" alt="Logo patitaspet's">
+    <img class="header__car--icon" src="../../src/img/carrito.svg" alt="icono carrito">
         <div class="car__nav">
           <table id="car__list" class="car__list">
             <thead>
@@ -25,20 +26,22 @@
             <tbody></tbody>
           </table>
           <div class="car__details">
-            <a href="#" class="details" >Detalles</a>
+            <!-- <a href="#" class="details" >Detalles</a> -->
             <input class="vaciar-carrito" type="submit" value="Vaciar Carrito">
+            <input class="buy" type="submit" value="Pagar" >
           </div>
       </div>
     <!-- </div> -->
       <div class="header__burger">
-        <img class="header__burger--img" src="../src/img/Menu.svg" alt="icono menu">
+        <img class="header__burger--img" src="../../src/img/Menu.svg" alt="icono menu">
         <a class="header__burger--text">Menú</a>
       </div>
       <div class="header__nav">
         <ul>
-          <li><a href="#">Perfil</a></li>
+          <li><a href="serviciosCliente.html">Perfil</a></li>
           <li><a href="#">Mascotas</a></li>
-          <li><a href="#">Buscar <br> veterinario</a></li>
+          <li><a href="#">Buscar veterinario</a></li>
+          <li><a href="carritoCliente.html">Carrito</a></li>
           <li><a href="citasVeterinario.html">Citas</a></li>
           <li><a href="#">Ver seguimiento</a></li>
           <li><a href="#">Blog</a></li>
@@ -46,8 +49,8 @@
         </ul>
       </div>
   </div>
-  <script src="../src/js/iniciarSesion.js"></script>
-<script src="../src/js/carrito.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="../../src/js/menuDesplegable.js"></script>
+  <script src="../../src/js/carritoClienteNav.js"></script>
 </body>
 </html>

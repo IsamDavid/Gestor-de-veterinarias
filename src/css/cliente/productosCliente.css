@@ -64,11 +64,6 @@ body {
   /* text-align: center; */
 }
 
-/* .car__list table{
-  color: black;
-  width: 270px;
-  text-align: center;
-} */
 .car__list th{
   text-align: center;
   width: 270px;
@@ -89,22 +84,35 @@ td{
 
   /* padding-right: 30px; */
 }
-.car__details .vaciar-carrito{
+.car__details .buy{
   text-decoration:none;
-  /* background: #1f4287; */
-  background: #21E6C1;
+  background: #1f4287; 
+  /* background: #278EA5; */
   width: 140px;
   height: 30px;
   color: #f6f6f6;
-  
-  /* border: 1px solid #1f4287;   */
-  border: 1px solid #21E6C1;  
+  background-size: 140px 30px;
+  border: 1px solid #1f4287;
+  /* border: 1px solid #278EA5;   */
   border-radius: 20px;
   margin: 20px;
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
   /* padding-right: 30px; */
+}
+.car__details .vaciar-carrito{
+  text-decoration:none;
+  background: rgb(255, 71, 71);
+  width: 140px;
+  height: 30px;
+  color: #f6f6f6;
+  border: 1px solid rgb(255, 71, 71);  
+  border-radius: 20px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
 }
 .navCar__img img{
   width: 100px;
@@ -174,8 +182,8 @@ td{
   
 }
 .header__nav li{
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .header__nav a{
@@ -183,9 +191,8 @@ td{
   color: #fcfcfc;
 }
 
-
 .main{
-  background-image: url(../../vistas/Fondo\ cliente.jpg);
+  background-image: url(../../img/Fondo\ cliente1.jpg);
   /* background-image: url(../../vistas/Huesos.jpg); */
   background-repeat: repeat-y;
   /* background-position: cover; */
@@ -259,7 +266,7 @@ td{
   /* margin-top: 20px; */
 }
 .footer{
-    background-image: url(../../vistas/Fondo\ cliente.jpg);
+  background-image: url(../../img/Fondo\ cliente1.jpg);
   background-repeat: repeat-y;
   background-size: cover;
   background-attachment: fixed;
