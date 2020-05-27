@@ -1,53 +1,82 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <html>
 
-<head>
-  <link type="text/css" rel="stylesheet" href="../../src/css/cliente/buscarVeterinario.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>cliente</title>
-</head>
+    <head>
+    <link type="text/css" rel="stylesheet" href="../../src/css/cliente/headerCliente.css">
+    <link type="text/css" rel="stylesheet" href="../../src/css/cliente/buscarVeterinario.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>PatitasPet's</title>
+    </head>
 
-<body>
-    <div id="main">
-    <div class="apartado1">
-        <div class="imag">
-            <ul>
-            <li style="float:left"><a class="posicion_logo" href="">
-            <img src="../../src/img/Logo blanco.png" width="250px" height="100px"> </a></li>
-            
-                <li ><a href="#" class="letra_negritas" >Menu</a></li>
-                
-                <li id="blog"><a href="#servicios" class="letra_negritas">Blog</a></li>
-                
-              </ul>
-              
+    <body>
+
+    <div class="header">
+        <img class="header__logo"  src="../../src/img/Logo blanco.png" alt="Logo patitaspet's">
+        <img class="header__car--icon" src="../../src/img/carrito.svg" alt="icono carrito">
+            <div class="car__nav">
+            <table id="car__list" class="car__list">
+                <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cant</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="car__details">
+                <!-- <a href="#" class="details" >Detalles</a> -->
+                <input class="vaciar-carrito" type="submit" value="Vaciar Carrito">
+                <input class="buy" type="submit" value="Pagar" >
+            </div>
         </div>
+        <!-- </div> -->
+        <div class="header__burger">
+            <img class="header__burger--img" src="../../src/img/Menu.svg" alt="icono menu">
+            <a class="header__burger--text">Menú</a>
+        </div>
+        <div class="header__nav">
+            <ul>
+                <li><a href="perfilCliente.html">Perfil</a></li>
+                <li><a href="mascotasCliente.html">Mascotas</a></li>
+                <li><a href="buscarVeterinarios.html">Buscar veterinario</a></li>
+                <li><a href="carritoCliente.html">Carrito</a></li>
+                <li><a href="citasVeterinario.html">Citas</a></li>
+                <li><a href="seguimiento.html">Ver seguimiento</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </div>
 
+    <div id="main">
         <div id="tabla">
             
-            <table >
-                <tr id="Titulos">
-                    <th style="width: 400px;">Veterinario</th>
+            <table class="tabla_main">
+                <tr class="tr_main" id="Titulos">
+                    <th class="th_main" style="width: 400px;">Veterinario</th>
                     
-                    <th style="width: 750px;">Dirección de Clinica</th>
+                    <th class="th_main" style="width: 750px;">Dirección de Clinica</th>
                     
-                    <th style="width: 250px;">Telefono</th>
-                    
-                </tr>
-                <tr class="datos">
-                    <td>Juan Jose Mazanilla Juarez</td>
-                    
-                    <td>Bilbao, 342, efid 12 depto. 102 México CDMX, CP: 09830</td>
-                    
-                    <td>1234567890</td>
+                    <th class="th_main" style="width: 250px;">Telefono</th>
                     
                 </tr>
                 <tr class="datos">
-                    <td>Alonso Rodriguez Ochoa</td>
+                    <td class="td_main">Juan Jose Mazanilla Juarez</td>
                     
-                    <td>Bilbao, 342, efid 12 depto. 102 México CDMX, CP: 09830</td>
+                    <td class="td_main">Bilbao, 342, efid 12 depto. 102 México CDMX, CP: 09830</td>
                     
-                    <td>123456890</td>
+                    <td class="td_main">1234567890</td>
+                    
+                </tr>
+                <tr class="datos">
+                    <td class="td_main">Alonso Rodriguez Ochoa</td>
+                    
+                    <td class="td_main">Bilbao, 342, efid 12 depto. 102 México CDMX, CP: 09830</td>
+                    
+                    <td class="td_main">123456890</td>
                     
                 </tr>
             </table>
@@ -58,10 +87,8 @@
         
     </div>
     </div>
-</body>
-</html>
-        
-    </div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="../../src/js/menuDesplegable.js"></script>
+    <script src="../../src/js/carritoClienteNav.js"></script>
 </body>
 </html>

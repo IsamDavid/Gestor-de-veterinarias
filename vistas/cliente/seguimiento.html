@@ -1,37 +1,65 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <html>
 
-<head>
-  <link type="text/css" rel="stylesheet" href="../../src/css/cliente/seguimiento.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Vaterinario</title>
-</head>
+    <head>
+    <link type="text/css" rel="stylesheet" href="../../src/css/cliente/headerCliente.css">
+    <link type="text/css" rel="stylesheet" href="../../src/css/cliente/seguimiento.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>PatitasPet's</title>
+    </head>
 
-<body>
-    <div id="main">
-    <div class="apartado1">
-        <div class="imag">
-            <ul>
-            <li style="float:left"><a class="posicion_logo" href="">
-            <img src="../../src/img/Logo blanco.png" width="250px" height="100px"> </a></li>
-            
-                <li ><a href="#" class="letra_negritas" >Seguimiento</a></li>
-                
-                <li id="blog"><a href="#servicios" class="letra_negritas">Blog</a></li>
-                
-              </ul>
-              
-        </div>
+    <body>
 
-        <div id="tabla">
-            <h1 class="Lines-effect">Seguimiento</h1>
-            <table >
+    <div class="header">
+        <img class="header__logo"  src="../../src/img/Logo blanco.png" alt="Logo patitaspet's">
+        <img class="header__car--icon" src="../../src/img/carrito.svg" alt="icono carrito">
+            <div class="car__nav">
+            <table id="car__list" class="car__list">
+                <thead>
                 <tr>
-                    <th style="width: 150px;">Mascota</th>
-                    <th style="width: 150px;">Servicio</th>
-                    <th style="width: 260px;">Fecha de cita</th>
-                    <th style="width: 260px;">Fecha de Finalización</th>
-                    <th style="width: 275px;">Indicaciones</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cant</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="car__details">
+                <!-- <a href="#" class="details" >Detalles</a> -->
+                <input class="vaciar-carrito" type="submit" value="Vaciar Carrito">
+                <input class="buy" type="submit" value="Pagar" >
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="header__burger">
+            <img class="header__burger--img" src="../../src/img/Menu.svg" alt="icono menu">
+            <a class="header__burger--text">Menú</a>
+        </div>
+        <div class="header__nav">
+            <ul>
+                <li><a href="perfilCliente.html">Perfil</a></li>
+                <li><a href="mascotasCliente.html">Mascotas</a></li>
+                <li><a href="buscarVeterinarios.html">Buscar veterinario</a></li>
+                <li><a href="carritoCliente.html">Carrito</a></li>
+                <li><a href="citasVeterinario.html">Citas</a></li>
+                <li><a href="seguimiento.html">Ver seguimiento</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </div>
+            <div id="main">
+            <div id="tabla">
+                <h1 class="Lines-effect">Seguimiento</h1>
+                <table class="table_main">
+                    <tr>
+                    <th class="th_main" style="width: 150px;">Mascota</th>
+                    <th class="th_main" style="width: 150px;">Servicio</th>
+                    <th class="th_main" style="width: 260px;">Fecha de cita</th>
+                    <th class="th_main" style="width: 260px;">Fecha de Finalización</th>
+                    <th class="th_main" style="width: 275px;">Indicaciones</th>
                     
                 </tr>
                 <tr class="datos">
@@ -55,10 +83,12 @@
             </table>
         </div>
     </div>
-
     <div>
         
     </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="../../src/js/menuDesplegable.js"></script>
+    <script src="../../src/js/carritoClienteNav.js"></script>
 </body>
 </html>

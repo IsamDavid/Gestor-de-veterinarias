@@ -2,65 +2,22 @@
     border:0;
     margin:0;
   }
-body{zoom: .75;
+body{
+
 background-color: #D6D6D6;
-overflow-x : hidden;}
-.apartado1{
-    background-color: #1f4287;
-    height: 170px;}
-
-
-.imag{
-    margin-left: 340px;
-    border-color: blanchedalmond;
-    border-style: solid;
-    
+overflow-x : hidden;
 }
-.posicion_logo{
-    float: left;
-    padding-top: 35px;
-}
-ul {
-    list-style-type: none;
-    margin-right: 430px;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {float: none;}
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-    padding: 6px 12px;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .userR {
-    border-radius: 20px;
-    border: 1px solid #9FD3C7;
-    margin-right: 100px;
-    background-color: #9FD3C7;
-  }
-  .letra_negritas{ 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    padding-top: 80px;
-    float: right;}
 
-    table{
+
+    .tabla_main{
     background-color: #ffffff;
     border:#B6B3B3 1px solid;
     border-collapse: collapse;
     font-family:'Times New Roman', Times, serif;
     font-size: 25px;
     text-align: center;
-    }
-    th {
+}
+    .th_main {
         
         color: #ffffff;
         font-weight: 100;
@@ -71,7 +28,7 @@ ul {
         width: 700px;
 
     }
-    tr{
+    .tr_main{
         height: 70px;
     }
     .datos{
@@ -79,24 +36,14 @@ ul {
     }
     #tabla{
         
-        width: 1500px;
-        height: 1500px;
+        width: 1206px;
+        height: 495px;
         margin-right: auto;
         margin-left: auto;
         margin-top: 70px;
     }
     
     #main{
-        width: 1850px;
+        /* width: 1850px; */
         margin-right: auto;
         margin-left: auto;}
-     #blog{
-            margin-right: 400px;
-        }
-        .content__button{
-            border-radius: 5px;
-            border: 1px solid #278EA5;
-            background-color: #278EA5;
-            position: relative;
-            
-            color: #FFFFFF;}
