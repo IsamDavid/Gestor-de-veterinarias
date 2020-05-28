@@ -14,7 +14,7 @@ body {
 }
 .header {
   background-color: #1f4287;
-  height: 145px;
+  height: 135px;
   width: 100%;
 }
 
@@ -105,22 +105,58 @@ body {
 
 .second_header{
     background-image: url(../../img/background_Veterinario.jpg);
-    height: 551px;
+    height: 561px;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .citas{
-    top: 52px;
+    top: 150px;
     left: 175px;
     font-size: 40px;
+    font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     color: #071e3d;
     position: absolute;
 }
 
-.busqueda{
+#busqueda{
+  border-radius: 3px;
   position: absolute;
-  padding-left: 15px;
-
+  left: 100px;
+  top: 205px;
+  width: 120px;
 }
+
+#fecha{
+  border-radius: 3px;
+  position: absolute;
+  left: 250px;
+  top: 205px;
+  height: 17px;
+  width: 120px;
+}
+
+/*
+table{
+  position: absolute;
+  left: 220px;
+  top: 250px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+td{
+  border: 2px double #248499;
+}
+
+th{
+  background: #248499;
+  color: #ffffff;
+}
+
+td, th{
+  text-align: center;
+  padding: 0.5em;
+}
+*/
