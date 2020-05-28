@@ -1,26 +1,192 @@
-*{
-margin: 0px;
-padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
 }
-body{
-  background-color: #D6D6D6;
-} 
-.main{
-  /* background-color: #D6D6D6;*/
-  background-color: blanchedalmond;
+.fondo2 {
+  background-color: #d6d6d6;
+  height: 60px;
 }
-
-.input-group{
-  background-image: url(../img/password.svg);
-  background-repeat: no-repeat;
-  background-position: 30px;
-  width: 437px;
-  padding-left: 90px;
-  border-radius: 15px;
-  border: 1px solid #dfe1e5;
-  height: 54px;
+.fondo2 p {
   position: relative;
-  left: 420px;
-  margin-bottom: 20px;
-  font-size: 29px; 
+  left: 153px;
+  top: 26px;
+  font-size: 50px;
+  z-index: 1;
+}
+.input-group {
+  background-color: #ffffff;
+  height: 450px;
+  position: relative;
+  /* z-index: 0; */
+}
+.input-group__input--name {
+  top: 70px;
+  position: relative;
+  display: inline-block;
+  left: 185px;
+  font-size: 20px;
+}
+.input-group__input--name input {
+  position: absolute;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  border: 1px solid #707070;
+  color: #707070;
+  font-size: 20px;
+  padding-left: 10px;
+  height: 30px;
+  margin-top: 5px;
+}
+.input-group__input--lastName1 {
+  top: 70px;
+  position: relative;
+  display: inline-block;
+  left: 510px;
+  font-size: 20px;
+}
+.input-group__input--lastName1 input {
+  position: absolute;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  border: 1px solid #707070;
+  color: #707070;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.input-group__input--lastName2 {
+  top: 70px;
+  position: relative;
+  display: inline-block;
+  left: 810px;
+  font-size: 20px;
+}
+.input-group__input--lastName2 input {
+  position: absolute;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  border: 1px solid #707070;
+  color: #707070;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.input-group__input--address {
+  top: 180px;
+  position: absolute;
+  left: 185px;
+  font-size: 20px;
+}
+.input-group__input--address input {
+  position: absolute;
+  border-radius: 5px;
+  width: 550px;
+  background-color: #fcfcfc;
+  border: 1px solid #707070;
+  color: #707070;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.input-group__input--email {
+  top: 180px;
+  position: absolute;
+  /* display: inline; */
+  left: 815px;
+  font-size: 20px;
+}
+.input-group__input--email input {
+  position: relative;
+  border-radius: 5px;
+  width: 366px;
+  background-color: #fcfcfc;
+  border: 1px solid #707070;
+  color: #707070;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.input-group__input--password {
+  top: 290px;
+  position: absolute;
+  left: 185px;
+  font-size: 20px;
+}
+.input-group__input--password input {
+  position: relative;
+  border-radius: 5px;
+  width: 275px;
+  background-color: #fcfcfc;
+  border: 1px solid #707070;
+  color: #707070;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.input-group__input--phone {
+  top: 290px;
+  position: absolute;
+  left: 495px;
+  font-size: 20px;
+}
+.input-group__input--phone input {
+  position: relative;
+  border-radius: 5px;
+  width: 155px;
+  background-color: #fcfcfc;
+  border: 1px solid #707070;
+  color: #707070;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.input-group__input--curp {
+  top: 290px;
+  position: absolute;
+  left: 710px;
+  font-size: 20px;
+}
+.input-group__input--curp input {
+  position: relative;
+  border-radius: 5px;
+  width: 225px;
+  background-color: #fcfcfc;
+  border: 1px solid #707070;
+  color: #707070;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.input-group__select{
+  position: absolute;
+  top: 290px;
+  left: 1000px;
+  font-size: 20px;
+}
+.input-group__button--save{
+  position: relative;
+  top: 390px;
+  border-radius: 10px;
+  background-color: #248499;
+  color: white;
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  left: 865px;
+}
+.input-group__link--back{
+  font-size: 20px;
+  position: absolute;
+  top: 390px;
+  left: 1010px;
 }
