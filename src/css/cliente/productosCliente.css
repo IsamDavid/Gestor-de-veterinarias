@@ -150,7 +150,7 @@ td{
 }
 
 .header__nav{
-  top: 145px;
+  top: 113px;
   position: absolute;
   /* display: none; */
   
@@ -160,14 +160,17 @@ td{
   transition: .4s;
   z-index: 2;
   float: right;
+  display: none;
+}
+
+.hide{
+  display: block;
 }
 
 .is_activate{
   left: 1050px;
   /* text-align: center; */
 }
-
-
 
 .header__nav ul{
   float: right;

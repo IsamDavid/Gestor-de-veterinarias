@@ -149,11 +149,9 @@ td{
 }
 
 .header__nav{
-  top: 145px;
+  top: 113px;
   position: absolute;
-  /* display: none; */
-  
-  /* float: right; */
+  display: none;
   width: 300px;
   left: 1365px;
   transition: .4s;
@@ -161,12 +159,12 @@ td{
   float: right;
 }
 
+.hide{
+  display: block;
+}
 .is_activate{
   left: 1070px;
 }
-
-
-
 .header__nav ul{
   float: right;
   list-style: none;

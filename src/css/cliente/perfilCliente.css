@@ -1,0 +1,26 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+  background-color: #D6D6D6;
+} 
+.main{
+  /* background-color: #D6D6D6;*/
+  background-color: blanchedalmond;
+}
+
+.input-group{
+  background-image: url(../img/password.svg);
+  background-repeat: no-repeat;
+  background-position: 30px;
+  width: 437px;
+  padding-left: 90px;
+  border-radius: 15px;
+  border: 1px solid #dfe1e5;
+  height: 54px;
+  position: relative;
+  left: 420px;
+  margin-bottom: 20px;
+  font-size: 29px; 
+}
