@@ -282,24 +282,13 @@ body {
   position: absolute;
 }
 
-.sex_box input {
-  position: absolute;
-  background-position: 30px;
-  height: 20px;
-  border-radius: 2px;
-  border: 1px solid black;
-  top: 525px;
-  float: right;
-  right: 300px;
-  margin-bottom: 20px;
-  font-size: 5px;
-  font-family: "Times New Roman", Times, serif;
-}
 
 .sex {
-  right: 300px;
-  top: 495px;
+  right: 280px;
+  top: 485px;
+  padding-left: 10px;
   color: #707070;
+  font-family: 'Times New Roman', Times, serif;
   position: absolute;
 }
 
