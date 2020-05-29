@@ -1,11 +1,17 @@
+<?php
+session_start();
+$correo = $_SESSION['username'];
+
+if ($correo == null || $correo = ''){
+    header("location: iniciarSesion.html");
+}
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-<?php
-session_start();
-$usuario = $_SESSION['username'];
 
-?>
+
+
 <head>
   <link type="text/css" rel="stylesheet" href="../src/css/administradorPaginaPrincipal.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -20,7 +26,7 @@ $usuario = $_SESSION['username'];
             <li style="float:left"><a class="posicion_logo" href="">
             <img src="../src/img/Logo blanco.png" width="250px" height="100px"> </a></li>
             
-                <li ><a href="#" class="letra_negritas" >Cerrar Sesión</a></li>
+                <li ><a href="../src/php/cerrarSesion.php" class="letra_negritas" >Cerrar Sesión</a></li>
                 
                 <li id="blog"><a href="#servicios" class="letra_negritas">Blog</a></li>
                 

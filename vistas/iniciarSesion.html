@@ -17,20 +17,20 @@
   <div id="content" class="content">
     <img class="content__icon" src="../src/img/huella.svg" alt="Icono de huella">
     <h1 class="content__title">Iniciar sesión</h1>  
-    <form action="../src/php/iniciarSesion.php" method="POST"></form>
+    <form action="../src/php/iniciarSession.php" method="POST">
       <div class="content__input--user">
           <!-- Email -->
-        <input type="text" placeholder="Correo">
+        <input type="text"  name="Correo" placeholder="Correo">
       </div>
         <br>
         <div class="content__input--password">
           <!-- Contraseña -->
-          <input type="password"  minlength="6" maxlength="20" placeholder="Contraseña">
+          <input type="password" name="Contraseña" minlength="6" maxlength="20" placeholder="Contraseña">
         </div>
           <br>
-          <input class="content__button" type="submit" value="Enviar">
+          <!-- <button class="content__button" type="submit" value="Enviar">-->
           
-          <!-- <button type="submit" value="Entrar">Entrar</button> -->
+          <button type="submit" class="content__button" >Entrar</button>
       <p class="content__register">¿Aun no estas registrado? <a href="tipoderegistro.html"> Registrate aquí</a></p>
     </form>
   </div>
