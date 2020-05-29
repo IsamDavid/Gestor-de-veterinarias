@@ -118,6 +118,7 @@ body {
   left: 100px;
   top: 205px;
   width: 120px;
+  padding-left: 5px;
 }
 
 #fecha{
@@ -127,6 +128,7 @@ body {
   top: 205px;
   height: 17px;
   width: 120px;
+  padding-left: 5px;
 }
 
 
@@ -139,7 +141,7 @@ table{
 }
 
 td{
-  border: 2px double #248499;
+  border: 1px solid #248499;
 }
 
 th{
