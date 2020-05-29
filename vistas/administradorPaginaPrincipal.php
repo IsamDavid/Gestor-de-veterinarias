@@ -1,6 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
 
+<html>
+<?php
+session_start();
+$usuario = $_SESSION['username'];
+
+?>
 <head>
   <link type="text/css" rel="stylesheet" href="../src/css/administradorPaginaPrincipal.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
