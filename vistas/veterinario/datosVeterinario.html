@@ -93,16 +93,11 @@
         </div>                
             <br>
         
-        <div class="sex_box">
-            <!-- Sexo -->
-            <p class="sex">Genero: 
-                <select name="genero" required>
-                    <option> - - </option>
-                    <option> Masculino </option>
-                    <option> Femenino </option>
-                  </select>
-            </p><br>
-        </div>                
+        <fieldset class="sex">
+            <legend>Sexo</legend>
+            <label for="masculino"><input type="radio" name="genero" value="masculino">Masculino</label>
+            <label for="femenino"><input type="radio" name="genero" value="femenino">Femenino</label>
+        </fieldset>
             <br>
 
         <input class="save" type="submit" value="Guardar" required name="guardar">
