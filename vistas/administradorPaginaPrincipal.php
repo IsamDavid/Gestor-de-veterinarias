@@ -1,7 +1,7 @@
 <?php
 session_start();
 $correo = $_SESSION['username'];
-
+/* comprobacion de sesion*/
 if ($correo == null || $correo = ''){
     header("location: iniciarSesion.html");
 }
@@ -9,9 +9,6 @@ if ($correo == null || $correo = ''){
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-
-
-
 <head>
   <link type="text/css" rel="stylesheet" href="../src/css/administradorPaginaPrincipal.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
