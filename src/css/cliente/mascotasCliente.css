@@ -2,13 +2,12 @@
   font-family: 'Times New Roman', Times, serif;
 }
 body{
-  background-color: #d6d6d6;
+  overflow-x: hidden; 
+  background-image: url(../../img/Fondo\ cliente1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
-.fondo2{
-  background-color: #d6d6d6;
-  height: 60px;
-  /* border-bottom: 1px solid black ; */
-}
+
 .fondo2 p {
   position: relative;
   left: 153px;
@@ -60,9 +59,8 @@ body{
 }
 .buttons input{
   position: relative;
-  left: 35px;
+  left: 65px;
   margin-bottom: 20px;
-  margin-right: 10px;
   width: 55px;
   height: 25px;
   border-radius:8px;

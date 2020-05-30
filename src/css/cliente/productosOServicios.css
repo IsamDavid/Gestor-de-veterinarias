@@ -1,6 +1,8 @@
 body{
-  background-color: #d6d6d6;
-  position: relative;
+  overflow-x: hidden;
+  background-image: url(../../img/Fondo\ cliente1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .card__product{

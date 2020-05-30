@@ -1,0 +1,6 @@
+body{
+  overflow-x: hidden;
+  background-image: url(../../img/Fondo\ cliente1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
