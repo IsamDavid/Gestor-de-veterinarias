@@ -3,7 +3,7 @@
 
 <head>
   <link type="text/css" rel="stylesheet" href="../../src/css/cliente/headerCliente.css">
-  <link type="text/css" rel="stylesheet" href="../../src/css/cliente/carritoCliente.css">
+  <link type="text/css" rel="stylesheet" href="../../src/css/cliente/carritoCliente.css ">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>PatitasPet's</title>
 </head>
@@ -29,7 +29,7 @@
           <div class="car__details">
             <!-- <a href="#" class="details" >Detalles</a> -->
             <input class="vaciar-carrito" type="submit" value="Vaciar Carrito">
-            <input class="buy" type="submit" value="Pagar" href="carrito.html" >
+            <input class="buy" type="submit" value="Pagar" href="carrito.html">
           </div>
       </div>
     <!-- </div> -->
@@ -46,16 +46,72 @@
           <li><a href="citasCliente.html">Citas</a></li>
           <li><a href="seguimiento.html">Ver seguimiento</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Cerrar sesión</a></li>
+          <li><a href="../index.html">Cerrar sesión</a></li>
         </ul>
       </div>
   </div>
 
-  <div class="main">
-
-
-  </div>
-
+<div class="main">
+      <div class="fondo2">
+        <p>Tus Carrito</p>
+      </div>
+      <div id="table">
+        <table class="table-group">
+          <tr>
+            <th class="table-group__head">Nombre</th>
+            <th class="table-group__head">Descripción</th>
+            <th class="table-group__head">Marca</th>
+            <th class="table-group__head">Precio</th>
+            <th class="table-group__head">Cantidad</th>
+            <th class="table-group__head"></th>
+          </tr>
+          <!-- Fila 1 -->
+          <tr class="table-group__data">
+            <td>Salmón</td>
+            <td>85g, para adulto</td>
+            <td>Whiskas</td>
+            <td>$80</td>
+            <td>3</td>
+            <td>
+              <img src="../../src/img/cruz negra.svg" alt="Agregar">
+              <img src="../../src/img/Bote basura negro.svg" alt="Borrar">
+            </td>
+          </tr>
+          <!-- Fila 2 -->
+          <tr class="table-group__data">
+            <td>Croquetas</td>
+            <td>2kg, para cachorro</td>
+            <td>Pedigree</td>
+            <td>$100</td>
+            <td>1</td>
+            <td>
+              <img src="../../src/img/cruz negra.svg" alt="Agregar">
+              <img src="../../src/img/Bote basura negro.svg" alt="Borrar">
+            </td>
+          </tr>
+          <tr class="table-group__total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Total</td>
+            <td>$180</td>
+          </tr>
+          <tr class="table-group__action">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="buttons">
+              <input class="cancel" type="submit" value="Cancelar">
+            </td>
+            <td class="buttons"> 
+              <input class="pay" type="submit" value="Pagar">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   <script src="../../src/js/menuDesplegable.js"></script>
   <script src="../../src/js/carritoClienteNav.js"></script>

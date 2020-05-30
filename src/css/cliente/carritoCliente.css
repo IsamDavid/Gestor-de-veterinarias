@@ -1,6 +1,76 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
 body{
-  overflow-x: hidden;
+  overflow-x: hidden; 
   background-image: url(../../img/Fondo\ cliente1.jpg);
   background-size: cover;
   background-attachment: fixed;
+}
+.fondo2 p {
+  position: relative;
+  left: 153px;
+  top: 26px;
+  font-size: 50px;
+  /* font-weight: bol; */
+}
+#table{ 
+  width: 1022px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  background-color: #ffffff;
+}
+.table-group{
+  width: 1022px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.table-group__head{
+  color: #ffffff;
+  font-weight: 100;
+  height: 10px;
+  text-align: center;
+  font-size: 30px;
+  background-color: #278EA5;
+  width: 700px;
+}
+.table-group__data{
+  font-weight: 100;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 15px;
+}
+.table-group__data td{
+  padding:10px 0px;
+}
+.table-group__total {
+  font-weight: 100;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.table-group__action input{
+  /* position: relative; */
+  /* left: 65px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60px;
+  height: 25px;
+  border-radius:8px;
+  color: #ffffff;
+  background-color: #278EA5;
+}
+.table-group__action .cancel{
+  position: relative;
+  left: 130px;
+}
+.table-group__action .pay{
+  position: relative;
+  left: 40px;
+}
+td img{
+  margin-left: 15px;
 }
