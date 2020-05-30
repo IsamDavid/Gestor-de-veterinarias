@@ -31,8 +31,13 @@ overflow-x : hidden;
     .tr_main{
         height: 70px;
     }
+
     .datos{
         height: 100px;
+    }
+    .datos a{
+        text-decoration: none;
+        color: #000000;
     }
     #tabla{
         
