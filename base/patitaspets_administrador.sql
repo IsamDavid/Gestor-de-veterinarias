@@ -36,7 +36,7 @@ CREATE TABLE `administrador` (
 
 LOCK TABLES `administrador` WRITE;
 /*!40000 ALTER TABLE `administrador` DISABLE KEYS */;
-INSERT INTO `administrador` VALUES (1,'hola@gmail.com','contraseña');
+INSERT INTO `administrador` VALUES (1,'hola@gmail.com','contraseña'),(2,'hola2@gmail.com','contraseña2');
 /*!40000 ALTER TABLE `administrador` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

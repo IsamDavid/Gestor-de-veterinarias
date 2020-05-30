@@ -1,10 +1,10 @@
 <?php
 $host = "LocalHost";
-$correo = "root";
-$contraseña = "";
+$usuario = "root";
+$clave = "";
 $bd = "patitaspets";
 
-$conexion = mysqli_connect($host,$correo,$contraseña,$bd);
+$conexion = mysqli_connect($host,$usuario,$clave,$bd);
 
 
 ?>

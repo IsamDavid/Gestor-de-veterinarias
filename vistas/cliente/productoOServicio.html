@@ -9,7 +9,7 @@
     <link
       type="text/css"
       rel="stylesheet"
-      href="../../src/css/cliente/mascotasCliente.css"
+      href="../../src/css/cliente/productosOServicios.css"
     />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>PatitasPet's</title>
@@ -41,8 +41,9 @@
           <tbody></tbody>
         </table>
         <div class="car__details">
+          <!-- <a href="#" class="details" >Detalles</a> -->
           <input class="vaciar-carrito" type="submit" value="Vaciar Carrito" />
-          <input class="buy" type="submit" value="Pagar" href="carrito.html" />
+          <input class="buy" type="submit" value="Pagar" href="carrito.html"/>
         </div>
       </div>
       <!-- </div> -->
@@ -69,56 +70,29 @@
     </div>
 
     <div class="main">
-      <div class="fondo2">
-        <p>Tus Mascotas</p>
+      <div class="card__product">
+        <a href="productosCliente.html">
+          <div class="card__product__img">
+            <img src="../../src/img/Productos.svg" alt="Productos" srcset="">
+          </div>
+          <div class="card__product__title1">
+            <h2>Productos</h2>
+          </div>
+        </a>
       </div>
-      <div id="table">
-        <table class="table-group">
-          <tr>
-            <th class="table-group__head">Nombre</th>
-            <th class="table-group__head">Mascota</th>
-            <th class="table-group__head">Edad</th>
-            <th class="table-group__head"><img src="../../src/img/cruz negra.svg" alt="Agregar" srcset=""></th>
-          </tr>
-          <tr class="table-group__data">
-            <td>Zeus</td>
-            <td>Perro Huscky</td>
-            <td>8 Meses</td>
-            <td class="table__button--delete">
-              <a href="">
-                <img src="../../src/img/Bote basura negro.svg" alt="Borrar" srcset="">
-              </a>
-            </td>
-          </tr>
-          <tr class="table-group__inputs">
-            <td>
-              <input type="text" value="">
-            </td>
-            <td>
-              <input type="text" value="">
-            </td>
-            <td>
-              <input type="text" value=""><br>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <form class="buttons" action="" method="get">
-                <input class="button" type="submit" value="Volver">
-                <input class="button" type="submit" value="Guardar">
-              </form>
-            </td>
-          </tr>
-        </table>
+      <div class="card__services">
+        <a href="serviciosCliente.html">
+          <div class="card__product__img">
+            <img src="../../src/img/Servicios.svg" alt="Servicios" srcset="">
+          </div>
+          <div class="card__product__title2">
+            <h2>Servicios</h2>
+          </div>
+        </a>
       </div>
     </div>
-    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <script src="../../src/js/menuDesplegable.js"></script>
-    <script src="../../src/js/carritoClienteNav.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="../../src/js/menuDesplegable.js"></script>
+  <script src="../../src/js/carritoClienteNav.js"></script>
   </body>
 </html>
