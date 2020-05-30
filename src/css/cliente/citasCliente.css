@@ -4,115 +4,45 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
-
-.cita{
-  top: 200px;
+.fondo2 p {
+  position: relative;
+  left: 180px;
+  top: 26px;
+  font-size: 50px;
+  z-index: 2;
+}
+#table{ 
+  width: 1022px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  background-color: #ffffff;
+}
+.table-group{
+  width: 1022px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.table-group__head{
+  color: #ffffff;
+  font-weight: 100;
+  height: 10px;
+  text-align: center;
   font-size: 35px;
-  font-style: italic;
-  left: 120px;
-  font-family: 'Times New Roman', Times, serif;
-  color: #071e3d;
-  position: absolute;
+  background-color: #278EA5;
+  width: 700px;
 }
-
-.cliente{
-  top: 250px;
-  font-size: 30px;
-  font-style: normal;
-  left: 120px;
-  font-family: 'Times New Roman', Times, serif;
-  color: #071e3d;
-  position: absolute;
+.table-group__data{
+  font-weight: 100;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 15px;
 }
-
-.name_seleccionar{
-  top: 320px;
-  left: 400px;
-  font-size: 20px;
-  color: #d6d6d6;
-  font-family: 'Times New Roman', Times, serif;
-  color: #071e3d;
-  position: absolute;
+.table-group__data td{
+  padding:10px 0px;
 }
-.seleccionar{
-  border: 1px solid #d6d6d6;
-  position: absolute;
-  top: 25px;
-  left: -1px;
-  height: 25px;
-  width: 180px;
-  border-radius: 5px;
-  padding-left: 5px;
-}
-
-.name_fecha{
-  top: 450px;
-  left: 400px;
-  font-size: 20px;
-  color: #d6d6d6;
-  font-family: 'Times New Roman', Times, serif;
-  color: #071e3d;
-  position: absolute;
-}
-.fecha{
-  border: 1px solid #d6d6d6;
-  position: absolute;
-  top: 25px;
-  left: -1px;
-  height: 25px;
-  width: 180px;
-  border-radius: 5px;
-  padding-left: 5px;
-}
-
-.name_servicio{
-  top: 320px;
-  left: 850px;
-  font-size: 20px;
-  color: #d6d6d6;
-  font-family: 'Times New Roman', Times, serif;
-  color: #071e3d;
-  position: absolute;
-}
-.servicio{
-  border: 1px solid #d6d6d6;
-  position: absolute;
-  top: 25px;
-  left: -1px;
-  height: 21px;
-  width: 180px;
-  border-radius: 5px;
-  padding-left: 5px;
-}
-
-
-.name_hora{
-  top: 450px;
-  left: 850px;
-  font-size: 20px;
-  color: #d6d6d6;
-  font-family: 'Times New Roman', Times, serif;
-  color: #071e3d;
-  position: absolute;
-}
-.hora{
-  font-family: 'Times New Roman', Times, serif;
-  border: 1px solid #d6d6d6;
-  font-size: 20px;
-  position: absolute;
-  top: 25px;
-  left: -1px;
-  height: 25px;
-  width: 180px;
-  border-radius: 5px;
-  padding-left: 5px;
-}
-
-.aceptar{
-  position: absolute;
-  top: 550px;
-  left: 950px;
-  color: white;
-  background-color: #248499;
-  border-radius: 5px;
+.table-group__data td ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

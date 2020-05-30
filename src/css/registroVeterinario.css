@@ -183,3 +183,9 @@ body {
   margin: 20px 0 75px 0;
   font-size: 20px;
 }
+
+.prueba{
+  position: absolute;
+  left: 100px;
+  margin-top: 90px;
+}

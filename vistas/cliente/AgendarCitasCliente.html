@@ -3,7 +3,7 @@
 
 <head>
   <link type="text/css" rel="stylesheet" href="../../src/css/cliente/headerCliente.css">
-  <link type="text/css" rel="stylesheet" href="../../src/css/cliente/citasCliente.css ">
+  <link type="text/css" rel="stylesheet" href="../../src/css/cliente/AgendarCitasCliente.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>PatitasPet's</title>
 </head>
@@ -50,48 +50,38 @@
         </ul>
       </div>
   </div>
+  <script src="../src/js/menuDesplegable.js"></script>
+<script src="../src/js/carrito.js"></script>
 
-<div class="main">
-      <div class="fondo2">
-        <p>Tus Citas</p>
-      </div>
-      <div id="table">
-        <table class="table-group">
-          <tr>
-            <th class="table-group__head">Fecha</th>
-            <th class="table-group__head">Hora</th>
-            <th class="table-group__head">Veterinario</th>
-            <th class="table-group__head">Mascota</th>
-            <th class="table-group__head">Servicio</th>
-            <th class="table-group__head">Producto</th>
-          </tr>
-          <!-- Fila 1 -->
-          <tr class="table-group__data">
-            <td>05/05/20</td>
-            <td>15:00 hrs</td>
-            <td>Pedro Suarez</td>
-            <td>Zeus</td>
-            <td>Vacuna</td>
-            <td><ol>
-              <li>Pelota</li>
-              <li>Croquetas</li>
-            </ol></td>
-          </tr>
-          <!-- Fila 2 -->
-          <tr class="table-group__data">
-            <td>10/05/20</td>
-            <td>12:00 hrs</td>
-            <td>Juan Gutierrez</td>
-            <td>Zeus</td>
-            <td>Baño</td>
-            <td><ol>
-              <li>Cepillo</li>
-              <li>Alimentador</li>
-            </ol></td>
-          </tr>
-        </table>
-      </div>
-    </div>
+  <h1 class="cita">Agendar cita</h1>
+
+  <span class="cliente">Juan José Manzanilla Juarez</span>
+
+
+  <label for="" class="name_seleccionar">
+    Seleccione la mascota:
+    <input class="seleccionar" type="search" name="mascota">
+  </label>
+
+  <label for="" class="name_fecha">
+    Seleccione Fecha:
+    <input type="date" name="fecha" class="fecha">
+  </label>
+
+
+  <label for="" class="name_servicio">
+    Servicio:
+    <input type="text" name="servicio" class="servicio">
+  </label>
+
+  <label for="" class="name_hora">
+    Seleccione la hora:
+    <input type="time" name="hora" class="hora">
+  </label>
+
+<button name="aceptar" class="aceptar">Aceptar</button>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   <script src="../../src/js/menuDesplegable.js"></script>
   <script src="../../src/js/carritoClienteNav.js"></script>
