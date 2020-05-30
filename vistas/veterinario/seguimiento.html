@@ -40,6 +40,43 @@
 <!--Segundo fondo-->
 <div class="second_header">
   <h2 class="seguimiento">Seguimiento</h2>
+
+  <div>
+    <table>
+      <thead>
+        <tr> 
+          <th>Mascota</th>
+          <th>Servicio</th>
+          <th>Fecha de cita</th>
+          <th>Fecha de finalización</th>
+          <th>Indicaciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="nombre_mascota" placeholder="Nombre" required></td>
+          <td><input type="text" name="servicio" required></td>
+          <td><input type="date" name="fecha_inicio" required></td>
+          <td><input type="date" name="fecha_termino" required></td>
+          <td>
+            <textarea rows="6" cols="25" wrap="virtual" name="indicaciones" required placeholder="Describa sus indicaciones a realizar..."></textarea><br>
+            <button class="boton1" name="aceptar">Aceptar</button>
+            <button class="boton2" name="rechazar">Rechazar</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+
 </div>
 
 <script src="../../src/js/headerVeterinario.js"></script>

@@ -111,4 +111,57 @@ body {
     color: #071e3d;
     position: absolute;
 }
-  
+
+
+table{
+  border-collapse: collapse;
+  position: absolute;
+  left: 225px;
+  top: 230px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+td{
+  border: 1px solid #248499;
+  font-size: medium;
+  background-color:#d6d6d6;
+}
+
+th{
+  background: #248499;
+  color: #ffffff;
+}
+
+td, th{
+  text-align: center;
+  padding: 0.5em;
+}
+
+input{
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 3px;
+  border-radius: 3px;
+  height: 20px;
+  width: 115px;
+}
+
+button{
+  color: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  background-color: #248499;
+  top: 5px;
+}
+
+.boton1{
+  left: -10px;
+}
+
+.boton2{
+  left: 15px;
+}
+
+textarea{
+  font-family: 'Times New Roman', Times, serif;
+}
