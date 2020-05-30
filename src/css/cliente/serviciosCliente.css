@@ -1,0 +1,67 @@
+body{
+  overflow-x: hidden; 
+  background-image: url(../../img/Fondo\ cliente1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main--title{
+  position: absolute;
+  left: 575px;
+  line-height: 80px;
+  font-size: 50px;
+}
+.main__row{
+  position: relative;
+  width: 965px;
+  height: 415px;
+  top:80px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+.main__column{
+  display: inline-block;
+  margin-right: 22px;
+  position: relative;
+  width: 295px;
+  height: 415px;
+  background-color: #FFFFFF;
+  border: 1px solid #E1E1E1;
+}
+
+.main__card--img{
+  width: 295px;
+  height: 200px;
+}
+
+.main__card--info{
+  /* text-align: left; */
+  padding: 10px 20px;
+}
+.main__card--info h3{
+  margin: 0px 0px 5px;
+}
+.main__card--info p{
+  margin: 0px 0px 10px;
+}
+.main__card--info .price{
+  font-weight: bold;
+  position: absolute;
+  top:330px
+  /* padding-top: 25px; */
+}
+.card__button{
+  width: 255px;
+  height: 38px;
+  /* position: relative; */
+  border-radius: 10px;
+  border: 1px solid #21E6C1;
+  background-color: #21E6C1;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: absolute;
+  top: 360px;
+  font-size: 20px;
+  /* margin-top: 20px; */
+}
