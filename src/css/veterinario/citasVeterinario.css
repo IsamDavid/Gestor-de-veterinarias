@@ -179,3 +179,12 @@ td, th{
   font-family: 'Times New Roman', Times, serif;
   color: #ffffff;
 }
+
+.palomita{
+  position: relative;
+  border-radius: 5px;
+  top: 4px;
+  left: -2px;
+  border: 1px solid black;
+  background-color: #248499;
+}
